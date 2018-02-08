@@ -1,0 +1,86 @@
+body {
+  font-size: 18px;
+  font-family: "ArialNarrow";
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body .highlight {
+  color: #005478;
+  font-weight: 600;
+}
+
+.card-body .discount {
+  color: #ff0033;
+  font-weight: 600;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  border-right: 1px solid #84B6D0;
+}
+
+.navbar-frost {
+  padding:0;
+  color: #FFFFFF;
+  background-color: #008ac4;
+}
+
+.navbar-frost .active {
+  background-color: #00aef7;
+}
+
+.navbar-frost .navbar-nav .nav-link {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.navbar-nav > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+
+
+.navbar-nav > li:hover, .nav > li:focus {
+    background-color: #00aef7;
+    text-decoration: none;
+}
+
+.shopping-cart {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.phone {
+  font-size: 2rem;
+  color: #005478;
+  font-weight: 600;
+}
+
+.slogan {
+  font-size: 3rem;
+  color: #005478;
+  font-weight: 600;
+}
+
+.button-cart {
+  background-color: #008ac4;
+  color: #ffffff;
+}
+
+.button-cart:hover {
+  background-color: #00aef7;
+  color: #ffffff;
+}
+
+.footer-bg {
+  background-color: #eee;
+}
+
+.card-footer {
+    padding: 5px;
+}
