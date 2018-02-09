@@ -4,8 +4,7 @@ body {
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
+  height: 100%;
 }
 
 .highlight {
@@ -36,7 +35,7 @@ body {
 .navbar-frost {
   padding:0;
   color: #FFFFFF;
-  background-color: #008ac4;
+  background-color: #0078b4;
 }
 
 .navbar-frost .active {
@@ -65,12 +64,12 @@ body {
 
 .phone {
   font-size: 2rem;
-  color: #005478;
+  color: #0078b4;
   font-weight: 600;
 }
 
 .button-cart {
-  background-color: #008ac4;
+  background-color: #0078b4;
   color: #ffffff;
 }
 
