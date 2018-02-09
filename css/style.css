@@ -3,6 +3,16 @@ body {
   font-family: "ArialNarrow";
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.highlight {
+  color: #005478;
+  font-weight: 800;
+}
+
 .card {
   height: 100%;
 }
@@ -43,26 +53,18 @@ body {
   font-size: 1.5rem;
 }
 
-
-
 .navbar-nav > li:hover, .nav > li:focus {
-    background-color: #00aef7;
-    text-decoration: none;
+  background-color: #00aef7;
+  text-decoration: none;
 }
 
 .shopping-cart {
-    font-size: 3rem;
-    padding: 0;
+  font-size: 3rem;
+  padding: 0;
 }
 
 .phone {
   font-size: 2rem;
-  color: #005478;
-  font-weight: 600;
-}
-
-.slogan {
-  font-size: 3rem;
   color: #005478;
   font-weight: 600;
 }
@@ -82,5 +84,5 @@ body {
 }
 
 .card-footer {
-    padding: 5px;
+  padding: 5px;
 }
