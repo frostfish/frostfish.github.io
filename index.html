@@ -9,27 +9,33 @@
     <title>ФростРыба</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/jqcart.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   </head>
 
   <body>
   	<!-- Header -->
     <div class="container mt-1 text-center">
       <div class="row vertical-align">
-        <div class="col-lg-3 col-md-12 media">
+        <div class="col-lg-4 col-md-12 media">
           <img class="align-self-center mx-auto d-block logo" src="img/logo.jpg" alt="">
         </div>
-        <div class="col-lg-8 col-md-11 text-right">
+        <div class="col-lg-6 col-md-11 text-right">
           <p>
             <span class="phone"><i class="fa fa-phone"></i> 8 (495) 208-78-54</span><br/>
-            г. Москва, Ступинский пр., д. 1, стр. 22
+            <span class="address"><a href="contacts.html">Москва, Ступинский проезд, дом 1, строение 22</a></span><br/>
+            <span class="address">понедельник-пятница 9:00-19:00, суббота и воскресенье — выходной</span>
           </p>
         </div>
-        <div class="col-lg-1 col-md-1 shopping-cart text-center">
-          <i class="fa fa-shopping-cart"></i>
+        <div class="col-lg-2 col-md-1 shopping-cart text-center">
+          <div class="jqcart-cart-label">
+            <span class="open"><img src="img/cart.png"></span>
+            <span class="jqcart-total-cnt"></span>
+          </div>
         </div>
       </div>
-  	</div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-frost">
@@ -70,7 +76,7 @@
     <!-- Footer -->
     <footer class="py-2 footer-bg">
       <div class="container">
-        <p class="m-0 text-center">ООО «ФростФиш» 2018</p>
+        <p class="m-0 text-center">ООО «FrostFish» 2018</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -78,6 +84,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jqcart.js"></script>
 
   </body>
 

@@ -1,6 +1,7 @@
 body {
   font-size: 18px;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: 'Arial Narrow', 'PT Sans Narrow', Arial, sans-serif;
+  font-stretch: condensed;
 }
 
 .logo {
@@ -32,7 +33,7 @@ body {
   font-weight: 600;
 }
 
-.navbar-nav > li{
+.navbar-nav > li {
   padding-left:30px;
   padding-right:30px;
   border-right: 1px solid #84B6D0;
@@ -55,7 +56,9 @@ body {
 .navbar-nav > li > a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .navbar-nav > li:hover, .nav > li:focus {
@@ -72,6 +75,11 @@ body {
   font-size: 2rem;
   color: #0078b4;
   font-weight: 600;
+}
+
+.address a {
+  font-size: 1.2rem;
+  color: black;
 }
 
 .button-cart {
