@@ -20,16 +20,19 @@
     border-right: 1px solid #F7F7F7;
 }
 .jqcart-cart-label img {
-    width: 4rem;
-    margin: 1.5rem;
+    width: 3rem;
+    margin-top: 0.5rem;
+}
+.jqcart-cart-label p {
+    font-size: 1rem;
 }
 .jqcart-cart-label .jqcart-total-cnt {
     position: absolute;
     text-align: center;
     width: 3rem;
-    margin-top: 2rem;
-    margin-left: -5rem;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: -3.1rem;
+    font-size: 1.1rem;
     color: #ffffff;
     line-height: 1rem;
     font-weight: 900;
@@ -81,7 +84,6 @@
     color: #6d88b7;
 }
 h2 .jqcart-print-order {
-  position: absolute;
   right: 0;
   margin-right: 10px;
   cursor: pointer;
