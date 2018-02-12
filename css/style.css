@@ -82,12 +82,12 @@ body {
   color: black;
 }
 
-.button-cart {
+.btn-frost {
   background-color: #0078b4;
   color: #ffffff;
 }
 
-.button-cart:hover {
+.btn-frost:hover {
   background-color: #00aef7;
   color: #ffffff;
 }
@@ -98,4 +98,9 @@ body {
 
 .card-footer {
   padding: 5px;
+}
+
+.advantage-check {
+  font-size: 36px;
+  color: #0078b4;
 }

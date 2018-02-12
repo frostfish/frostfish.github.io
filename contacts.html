@@ -68,44 +68,74 @@
 
     <div class="container mt-4">
       <div class="row mb-4">
-        <div class="col-lg-12 col-md-12 mb-2">
+        <div class="col-lg-7 col-md-12 mb-2">
           <h2>Контакты</h2>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="float-left mr-3" src="img/portrait.jpg" alt="">
-              <p class="m-0">
-                Фамилия Имя Отчество <br/>
-                Почта: <br/>
-                Телефон:
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 mb-2">
-          <div class="card">
-            <div class="card-body">
-              <img class="float-left mr-3" src="img/portrait.jpg" alt="">
-              <p class="m-0">
-                Фамилия Имя Отчество <br/>
-                Почта: <br/>
-                Телефон:
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
 
-      <div class="row">
-        <div class="col-lg-12 col-md-12 mb-2">
+          <div class="mt-3 mb-3">
+            <img class="float-left mr-3" src="img/portrait.jpg" alt="">
+            <p class="m-0">
+              Фамилия Имя Отчество <br/>
+              Почта: <br/>
+              Телефон:
+            </p>
+          </div>
+
+          <div class="mt-3 mb-3">
+            <img class="float-left mr-3" src="img/portrait.jpg" alt="">
+            <p class="m-0">
+              Фамилия Имя Отчество <br/>
+              Почта: <br/>
+              Телефон:
+            </p>
+          </div>
+
           <h2>Склад</h2>
           <p>
             Адрес: 117546, Россия, г. Москва, Ступинский проезд, дом 1, строение 22 <br/>
             Время работы: понедельник-пятница 9:00-19:00, суббота и воскресенье – выходной.
           </p>
         </div>
+
+        <div class="col-lg-5 col-md-12 p-0 card mb-2">
+          <div class="card-header mb-2">
+            <h2>Форма заявки</h2>
+          </div>
+          <form class="pl-2 pr-2">
+            <div class="form-group row">
+              <label for="client_name" class="col-lg-3 col-md-3 col-form-label text-right">Имя</label>
+              <div class="col-lg-9 col-md-9">
+                <input type="text" class="form-control" id="client_name" placeholder="Как к Вам обращаться?">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+              <div class="col-lg-9 col-md-9">
+                <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="client_email" class="col-lg-3 col-md-3 col-form-label text-right">Email</label>
+              <div class="col-lg-9 col-md-9">
+                <input type="text" class="form-control" id="client_email" placeholder="Электронная почта (не обязательно)">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-12 col-md-12">
+                <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
+              </div>
+            </div>
+            <div class="form-group row p-0">
+              <div class="col-lg-12 col-md-12 text-center">
+                <button type="submit" class="btn btn-frost">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
       </div>
 
       <div class="row">
