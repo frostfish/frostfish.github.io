@@ -289,7 +289,7 @@ $(function(){
   'use strict';
   // инициализация плагина
   $.jqCart({
-      buttons: '.button-cart',
+      buttons: '.btn-cart',
       handler: '/php/handler.php',
       cartLabel: '.shopping-cart',
       visibleLabel: true,

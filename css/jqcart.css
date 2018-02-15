@@ -144,7 +144,11 @@ h2 .jqcart-print-order::before {
 .jqcart-incr {
     display: inline-block;
     font-size: 1.1em;
+    background: #777777;
+    color: white;
     padding: 5px;
+    margin: 0 5px 0 5px;
+    font-weight: 800;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;

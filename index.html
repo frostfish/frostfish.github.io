@@ -14,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="index-bg">
   	<!-- Header -->
-    <div class="container mt-1 text-center">
+    <div class="container-fluid white-bg m-0 p-0">
+        <div class="container text-center">
       <div class="row vertical-align">
         <div class="col-lg-4 col-md-12 media">
           <img class="align-self-center mx-auto d-block logo" src="img/logo.png" alt="">
@@ -37,6 +38,7 @@
         </div>
       </div>
     </div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-frost">
@@ -50,13 +52,16 @@
               <a class="nav-link" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="index2.html">Главная-2</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="catalog.html">Каталог</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="delivery.html">Доставка</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">О компании</a>
+              <a class="nav-link" href="about.html">О&nbsp;компании</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacts.html">Контакты</a>
@@ -66,58 +71,64 @@
       </div>
     </nav>
 
-    <div class="container mt-4 mb-4">
+    <!-- <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-7 col-md-7">
+        <div class="col-lg-12 col-md-12 hover-image">
+          <img class="img-fluid" src="img/IMG_0326.jpg"/>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row index-row">
+        <div class="col-lg-7 col-md-7 p-5">
           <p>Коллектив компании <span class="highlight">FrostFish</span> приветствует вас на официальном сайте. У нас богатый многолетний опыт работы на рынке свежемороженой и консервированной рыбы.</p>
           <p>Наши преимущества:</p>
           <ul class="list-unstyled">
             <li class="d-flex"><span class="advantage-check"><i class="fa fa-check-circle"></i></span> <span class="justify-content-center align-self-center ml-2">Продаём только свежую рыбу и консервы</span></li>
             <li class="d-flex"><span class="advantage-check"><i class="fa fa-check-circle"></i></span> <span class="justify-content-center align-self-center ml-2">Гарантируем температурный режим при хранении продукции</span></li>
-            <li class="d-flex"><span class="advantage-check"><i class="fa fa-check-circle"></i></span> <span class="justify-content-center align-self-center ml-2">С каждым клиентом работаем индивидуально</span></li>
             <li class="d-flex"><span class="advantage-check"><i class="fa fa-check-circle"></i></span> <span class="justify-content-center align-self-center ml-2">Предлагаем оптовые и розничные цены</span></li>
           </ul>
         </div>
-        <div class="col-lg-5 col-md-5 p-0 card mb-2">
-          <div class="card-header mb-2">
-            <h2>Форма заявки</h2>
+
+        <div class="col-lg-5 col-md-5 p-5">
+            <h4>Форма заявки</h4>
+            <form class="pl-2 pr-2">
+              <div class="form-group row">
+                <label for="client_name" class="col-lg-3 col-md-3 col-form-label text-right">Имя</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_name" placeholder="Как к Вам обращаться?">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="client_email" class="col-lg-3 col-md-3 col-form-label text-right">Email</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_email" placeholder="Электронная почта (не обязательно)">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12 col-md-12">
+                  <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
+                </div>
+              </div>
+              <div class="form-group row p-0">
+                <div class="col-lg-12 col-md-12 text-center">
+                  <button type="submit" class="btn btn-frost">Отправить</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <form class="pl-2 pr-2">
-            <div class="form-group row">
-              <label for="client_name" class="col-lg-3 col-md-3 col-form-label text-right">Имя</label>
-              <div class="col-lg-9 col-md-9">
-                <input type="text" class="form-control" id="client_name" placeholder="Как к Вам обращаться?">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
-              <div class="col-lg-9 col-md-9">
-                <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="client_email" class="col-lg-3 col-md-3 col-form-label text-right">Email</label>
-              <div class="col-lg-9 col-md-9">
-                <input type="text" class="form-control" id="client_email" placeholder="Электронная почта (не обязательно)">
-              </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-lg-12 col-md-12">
-                <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
-              </div>
-            </div>
-            <div class="form-group row p-0">
-              <div class="col-lg-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-frost">Отправить</button>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer class="py-2 footer-bg">
+    <footer class="py-2 footer-frost bottom-footer">
       <div class="container">
         <p class="m-0 text-center">ООО «FrostFish» 2018</p>
       </div>

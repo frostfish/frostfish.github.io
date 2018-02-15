@@ -1,7 +1,35 @@
+html, body {
+  height: 99%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 18px;
   font-family: 'Arial Narrow', 'PT Sans Narrow', Arial, sans-serif;
   font-stretch: condensed;
+}
+
+.index-bg {
+  background: url('/home/bikulov/Projects/frostfish.github.io/img/index1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index:-100;
+}
+
+.index-row {
+  background: rgba(255,255,255,0.7);
+  margin-top: 5rem;
+}
+
+.white-bg {
+  background: #ffffff;
+}
+
+a {
+  color: #0078b4;
+  text-decoration: underline;
 }
 
 .logo {
@@ -17,10 +45,6 @@ body {
 .highlight {
   color: #005478;
   font-weight: 800;
-}
-
-.card {
-  height: 100%;
 }
 
 .card-body .highlight {
@@ -43,6 +67,18 @@ body {
   padding:0;
   color: #FFFFFF;
   background-color: #0078b4;
+}
+
+.footer-frost {
+  background: #0078b4;
+  color: #ffffff;
+}
+
+.bottom-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .navbar-frost .active {
@@ -103,4 +139,73 @@ body {
 .advantage-check {
   font-size: 36px;
   color: #0078b4;
+}
+
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #eee;
+  border-left-width: .25rem;
+  border-radius: .25rem
+}
+
+.bd-callout h4 {
+  margin-top: 0;
+  margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0
+}
+
+.bd-callout code {
+  border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -.25rem
+}
+
+.bd-callout-info {
+  border-left-color: #0078b4;
+}
+
+.bd-callout-info h4 {
+  color: #0078b4;
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e
+}
+
+.bd-callout-warning h4 {
+  color: #f0ad4e
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f
+}
+
+.bd-callout-danger h4 {
+  color: #d9534f
+}
+
+.hover-image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.hover-image img {
+  max-width: 100%;
+  text-align:center;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hover-image:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
