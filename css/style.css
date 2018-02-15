@@ -11,7 +11,7 @@ body {
 }
 
 .index-bg {
-  background: url('/home/bikulov/Projects/frostfish.github.io/img/index1.jpg');
+  background: url('http://frostfish.github.io/img/index1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
