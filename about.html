@@ -12,6 +12,7 @@
     <link href="css/jqcart.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
   </head>
 
   <body>
@@ -66,15 +67,59 @@
       </div>
     </nav>
 
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 mb-2">
+    <div class="container">
+      <div class="row mb-2 mt-2">
+        <div class="col-lg-12 col-md-12">
           <h2>Как мы работаем</h2>
-          <p></p>
-          <h2>О компании FrostFish</h2>
-          <p>У нас богатый опыт работы с морскими деликатесами.</p>
-          <h2>О продукции</h2>
-          <p></p>
+        </div>
+      </div>
+      <div class="row mb-2 mt-2">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <p>1. Вы делаете заказ на сайте через корзину или форму обратной связи.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <p>2. Наш специалист связывается с вами, уточняет детали и согласовывает доставку. Хотите, чтобы мы помогли вам с выбором? Попросите нашего сотрудника :)</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <p>3. Вы получаете заказ в оговоренное время.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="row mb-4">
+            <a href="img/about/1.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/1.jpg" class="img-fluid">
+            </a>
+            <a href="img/about/2.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/2.jpg" class="img-fluid">
+            </a>
+            <a href="img/about/3.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/3.jpg" class="img-fluid">
+            </a>
+            <a href="img/about/4.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/4.jpg" class="img-fluid">
+            </a>
+            <a href="img/about/5.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/5.jpg" class="img-fluid">
+            </a>
+            <a href="img/about/6.jpg" data-toggle="lightbox" data-gallery="about-gallery" class="col-sm-2 pl-1 pr-1">
+              <img src="img/about/6.jpg" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>Контроль качества</h3>
+          <p>Мы тщательно следим за соблюдением температурного режима и берем рыбу только у проверенных поставщиков. Так мы можем быть уверены, что рыба выросла в природных условиях, замораживалась лишь один раз и не содержит вредных веществ.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>Отличный вкус</h3>
+          <p>Мы выбираем только такую рыбу, которую попробовали сами. Так мы можем быть уверены во вкусе того, что предлагаем вам.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <h3>Справедливая цена</h3>
+          <p>Цена за качественный продукт не может быть низкой. Но мы работаем напрямую с поставщиками без посредников, что позволяет нам снижать издержки и снижать стоимость.</p>
         </div>
       </div>
     </div>
@@ -91,6 +136,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jqcart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    </script>
 
   </body>
 
