@@ -18,16 +18,12 @@
     orderform = '<h2 id="user_info">Контактная информация:</h2>\
     <form class="jqcart-orderform">\
       <p>\
-        <label>Имя:</label>\
-        <input type="text" name="user_name">\
-      </p>\
-      <p>\
         <label>Телефон:</label>\
-        <input type="text" name="user_phone">\
+        <input type="text" name="user_phone" placeholder="Ваш номер телефона (в произвольном формате)">\
       </p>\
       <p>\
         <label>Коментарий:</label>\
-        <textarea name="user_comment"></textarea>\
+        <textarea name="user_comment" placeholder="Напишите здесь любой комментарий (не обязательно)"></textarea>\
       </p>\
       <p>\
         <button id="submit" class="btn btn-success">Отправить заказ</button>\
@@ -195,19 +191,13 @@
     },
     sendOrder: function(e) {
       e.preventDefault();
-      var user_name = $('[name=user_name]').val();
       var user_phone = $('[name=user_phone]').val();
       var user_comment = $('[name=user_comment]').val();
-      if ($('[name=user_name]').val() === '') {
-        $('<p class="jqcart-error">Пожалуйста, укажите свое имя</p>').insertAfter($('[name=user_name]').first()).delay(3000).fadeOut();
-        return false;
-      }
       if ($('[name=user_phone]').val() === '') {
         $('<p class="jqcart-error">Пожалуйста, укажите контактный телефон</p>').insertAfter($('[name=user_phone]').first()).delay(3000).fadeOut();
         return false;
       }
       var user_data = {
-        'name': user_name,
         'phone': user_phone,
         'comment': user_comment
       };
