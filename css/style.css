@@ -17,18 +17,18 @@ h1, h2, h3 {
 
 .index-bg {
   background: url('http://frostfish.github.io/img/index_bg.jpg');
+  background-color: #edd29d;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index:-100;
 }
 
-.index-row {
+.white-70 {
   background: rgba(255,255,255,0.7);
-  margin-top: 10%;
 }
 
-.white-bg {
+.white-85 {
   background: rgba(255,255,255,0.85);
 }
 
@@ -39,12 +39,6 @@ a {
 
 .logo {
   height: 8rem;
-}
-
-@media (max-width: 992px) {
-  .logo {
-    width: 50%;
-  }
 }
 
 .highlight {
