@@ -5,9 +5,14 @@ html, body {
 }
 
 body {
-  font-size: 22px;
+  font-size: 20px;
   font-family: 'Arial Narrow', 'PT Sans Narrow', Arial, sans-serif;
   font-stretch: condensed;
+}
+
+.working-days th, td {
+  text-align: center;
+  padding: 0 0.3rem 0 0.3rem;
 }
 
 .index-bg {
@@ -20,20 +25,20 @@ body {
 
 .index-row {
   background: rgba(255,255,255,0.7);
-  margin-top: 5rem;
+  margin-top: 10%;
 }
 
 .white-bg {
-  background: #ffffff;
+  background: rgba(255,255,255,0.85);
 }
 
 a {
-  color: #0078b4;
+  color: #1172a7;
   text-decoration: underline;
 }
 
 .logo {
-  width: 100%;
+  height: 8rem;
 }
 
 @media (max-width: 992px) {
@@ -60,16 +65,16 @@ a {
 .navbar-frost {
   padding:0;
   color: #FFFFFF;
-  background-color: #0078b4;
+  background-color: #1172a7;
 }
 
 .footer-frost {
-  background: #0078b4;
+  background: #1172a7;
   color: #ffffff;
 }
 
 .bottom-footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -103,17 +108,20 @@ a {
 
 .phone {
   font-size: 2rem;
-  color: #0078b4;
+  color: #1172a7;
   font-weight: 600;
 }
 
-.address a {
+.description {
   font-size: 1.2rem;
+}
+
+.address a {
   color: black;
 }
 
 .btn-frost {
-  background-color: #0078b4;
+  background-color: #1172a7;
   color: #ffffff;
 }
 
@@ -132,7 +140,7 @@ a {
 
 .advantage-check {
   font-size: 36px;
-  color: #0078b4;
+  color: #1172a7;
 }
 
 .bd-callout {
@@ -162,11 +170,11 @@ a {
 }
 
 .bd-callout-info {
-  border-left-color: #0078b4;
+  border-left-color: #1172a7;
 }
 
 .bd-callout-info h4 {
-  color: #0078b4;
+  color: #1172a7;
 }
 
 .bd-callout-warning {
