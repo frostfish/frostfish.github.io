@@ -10,9 +10,9 @@ body {
   font-stretch: condensed;
 }
 
-.working-days th, td {
-  text-align: center;
-  padding: 0 0.3rem 0 0.3rem;
+h1, h2, h3 {
+  color: #1172a7;
+  font-weight: 800;
 }
 
 .index-bg {
