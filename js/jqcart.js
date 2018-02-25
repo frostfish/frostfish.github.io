@@ -46,7 +46,7 @@
       if (cartData !== null && Object.keys(cartData).length) {
         for (var key in cartData) {
           if (cartData.hasOwnProperty(key)) {
-            totalCnt += cartData[key].count;
+            totalCnt += 1;
           }
         }
         visibleLabel = true;
@@ -73,21 +73,30 @@
     addToCart: function(e) {
       e.preventDefault();
       itemData = $(this).data();
-			if(typeof itemData.id === 'undefined') {
+      var lotData = $(GetElementForId('.card-lot-selected', itemData.groupId)).data();
+
+      var count = parseFloat(GetElementForId('.card-amount', itemData.groupId).innerHTML);
+      
+			if(typeof lotData.id === 'undefined') {
 				console.log('Отсутствует ID товара');
 				return false;
 			}
       cartData = actions.getStorage() || {};
-      if (cartData.hasOwnProperty(itemData.id)) {
-        cartData[itemData.id].count++;
+      if (cartData.hasOwnProperty(lotData.id)) {
+        cartData[lotData.id].count += count;
       } else {
-        itemData.count = 1;
-        cartData[itemData.id] = itemData;
+        cartData[lotData.id] = {
+          img: itemData.img,
+          price: lotData.price * lotData.lot,
+          id: lotData.id,
+          title: itemData.title + ' (лот ' + lotData.lot + ')',
+          count: count
+        };
       }
       actions.setStorage(cartData);
       actions.changeTotalCnt(1);
       label.show();
-			if(opts.openByAdding) {
+			if (opts.openByAdding) {
 				actions.openCart();
 			}
       return false;
@@ -275,6 +284,18 @@
   };
 })(jQuery);
 
+function GetElementForId(className, id) {
+  var classElements = $(className);
+  var matched = null;
+  $.each(classElements, function(i) {
+    var classObject = classElements.get(i);
+    if (classObject.dataset['groupId'] == id) {
+      matched = classObject;
+    }
+  });
+  return matched;
+};
+
 $(function(){
   'use strict';
   // инициализация плагина
@@ -293,4 +314,56 @@ $(function(){
   $('#clear').click(function(){
     $.jqCart('clearCart'); // очистить корзину
   });
+  $('.card-lot').click(function(o) {
+    console.log(o);
+    var id = o.target.dataset['id'];
+    var groupId = o.target.dataset['groupId'];
+    var lot = o.target.dataset['lot'];
+    
+    var collection = $('.card-lot');
+    $.each(collection, function(i) {
+      var object = collection.get(i);
+      if (object.dataset['groupId'] == groupId) {
+        if (object.dataset['lot'] == lot) {
+          $(object).addClass('card-lot-selected');
+        } else {
+          $(object).removeClass('card-lot-selected');
+        }
+      }
+    });
+
+    var selectedLot = GetElementForId('.card-lot-selected', groupId);
+
+    GetElementForId('.card-lot-price', groupId).innerHTML = selectedLot.dataset['price'];
+    GetElementForId('.card-amount', groupId).innerHTML = 1;
+    GetElementForId('.card-total-price', groupId).innerHTML = selectedLot.dataset['price'] * selectedLot.dataset['lot'];
+  });
+
+  $('.card-amount-add').click(function(o) {
+    var groupId = o.target.dataset['groupId'];
+    var selectedLot = GetElementForId('.card-lot-selected', groupId);
+    var lot = $(selectedLot).data().lot;
+    var price = $(selectedLot).data().price;
+    
+    var amountLabel = GetElementForId('.card-amount', groupId);
+    amountLabel.innerHTML = Math.max(parseFloat(amountLabel.innerHTML)+1, 0);
+
+    GetElementForId('.card-total-price', groupId).innerHTML = amountLabel.innerHTML * price * lot;
+    $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
+  });
+
+  $('.card-amount-del').click(function(o) {
+    var groupId = o.target.dataset['groupId'];
+    var selectedLot = GetElementForId('.card-lot-selected', groupId);
+    var lot = $(selectedLot).data().lot;
+    var price = $(selectedLot).data().price;
+
+    var amountLabel = GetElementForId('.card-amount', groupId);
+    amountLabel.innerHTML = Math.max(parseFloat(amountLabel.innerHTML)-1, 0);
+
+    GetElementForId('.card-total-price', groupId).innerHTML = amountLabel.innerHTML * price * lot;
+    $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
+  });
+
+  
 });
