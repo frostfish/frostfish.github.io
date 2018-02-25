@@ -27,14 +27,9 @@
     font-size: 1rem;
 }
 .jqcart-cart-label .jqcart-total-cnt {
-    position: absolute;
-    text-align: center;
-    width: 3rem;
-    margin-top: 1.5rem;
-    margin-left: -3.1rem;
-    font-size: 1.1rem;
-    color: #ffffff;
-    line-height: 1rem;
+    font-size: 1.2rem;
+    padding: 0;
+    color: #1172a7;
     font-weight: 900;
 }
 /* Модальное окно */

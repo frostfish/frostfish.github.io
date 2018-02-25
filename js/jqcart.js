@@ -89,7 +89,7 @@
           img: itemData.img,
           price: lotData.price * lotData.lot,
           id: lotData.id,
-          title: itemData.title + ' (лот ' + lotData.lot + ')',
+          title: itemData.title + ' (фасовка ' + lotData.lot + ')',
           count: count
         };
       }
@@ -167,7 +167,8 @@
       var subtotal = 0,
 			cartHtml = '';
       cartData = actions.getStorage();
-      orderPreview = '<h2 id="basket">Корзина <span class="jqcart-print-order"></span></h2>\
+      orderPreview = '<button id="reset"  type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
+      <h2 id="basket">Корзина <span class="jqcart-print-order"></span></h2>\
       <div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div>ID</div><div></div><div>Наименование</div><div>Цена</div><div>Кол-во</div><div>Сумма</div><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {

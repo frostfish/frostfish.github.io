@@ -37,6 +37,10 @@ a {
   text-decoration: underline;
 }
 
+.mt-10 {
+  margin-top: 6rem !important;
+}
+
 .logo {
   height: 8rem;
 }
