@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>FrostFish — Оптово-розничная компания</title>
+    <title>FROST FISH — Оптово-розничная компания</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/jqcart.css" rel="stylesheet">
@@ -16,18 +16,18 @@
 
   <body class="index-bg h-100">
     <!-- Header -->
-    <div class="container-fluid text-center white-85">
+    <div class="container-fluid text-center white-bg-100">
       <div class="row vertical-align">
         <div class="col-lg-4 col-md-12 media">
-          <img class="align-self-center mx-auto d-block logo" src="img/logo.png" alt="">
+          <a href="catalog.html"><img class="align-self-center mx-auto d-block logo" src="img/logo.png" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-12 text-center align-self-center">
           <span class="phone"><i class="fa fa-phone"></i> 8 (495) 208-78-54</span><br/>
           <span class="description">заказать обратный звонок</span>
         </div>
         <div class="col-lg-3 col-md-8 text-center align-self-center">
-          <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1,&nbsp;стр.&nbsp;22</a></span><br/>
-          <span class="description">пн.-пт.&nbsp;9:00-19:00, сб.&nbsp;10:00-17:00</span>
+          <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><br/>
+          <span class="description">пн.-пт.&nbsp;9:00-19:00</span>
         </div>
         <div class="col-lg-1 col-md-4 text-center align-self-center">
           <div class="jqcart-cart-label shopping-cart ">
@@ -49,8 +49,13 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Главная</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="catalog.html">Каталог</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
+                <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
+                <a class="dropdown-item" href="catalog.html">Оленина</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="delivery.html">Доставка</a>
@@ -66,27 +71,43 @@
       </div>
     </nav>
 
-    <div class="container white-70 mt-10 rounded">
+    <div class="container white-bg-70 mt-10 rounded">
       <div class="row p-5">
-        <div class="col-lg-12 col-md-12 mb-3">
-          <p>Группа компаний <span class="highlight">«FrostFish»</span> приветствует вас на официальном сайте. У нас богатый многолетний опыт работы на рынке свежемороженой и консервированной рыбы.</p>
+        <div class="col-lg-12 col-md-12 mb-3 text-center">
+          <p>Группа компаний <span class="highlight">«FROST FISH»</span> приветствует вас на официальном сайте. У нас богатый многолетний опыт работы на рынке свежемороженой и консервированной рыбы.</p>
         </div>
       
-        <div class="col-lg-3 col-md-6 text-center">
-          <h3><i class="fa fa-snowflake-o" aria-hidden="true"></i> Свежесть</h3>
-          <p>Продаём только свежую рыбу и консервы от проверенных поставщиков</p>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <h3><i class="fa fa-check-circle" aria-hidden="true"></i> Качество</h3>
+        <div class="col-lg-6 col-md-12 text-center pt-4">
+          <h3><i class="fa fa-check-circle" aria-hidden="true"></i> Качественные продукты</h3>
           <p>Гарантируем температурный режим при хранении продукции</p>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <h3><i class="fa fa-rub" aria-hidden="true"></i> Цена</h3>
+          <h3><i class="fa fa-rub" aria-hidden="true"></i> Выгодные цены</h3>
           <p>Предлагаем оптовые и розничные цены</p>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <h3><i class="fa fa-rocket" aria-hidden="true"></i> Оперативность</h3>
+          <h3><i class="fa fa-rocket" aria-hidden="true"></i> Бесплатная доставка</h3>
           <p>Быстрая доставка, доступен самовывоз</p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="bd-callout bd-callout-info">
+              <h4>Форма заявки</h4>
+              <form class="pl-2 pr-2">
+                <div class="form-group row">
+                  <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                  <div class="col-lg-9 col-md-9">
+                    <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-lg-12 col-md-12">
+                    <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row p-0">
+                  <div class="col-lg-12 col-md-12 text-center">
+                    <button type="submit" class="btn btn-frost">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -94,7 +115,7 @@
     <!-- Footer -->
     <footer class="p-2 footer-frost bottom-footer">
       <div class="container">
-        <p class="m-0 text-center">Группа компаний «FrostFish»</p>
+        <p class="m-0 text-center">Группа компаний «FROST FISH»</p>
       </div>
       <!-- /.container -->
     </footer>

@@ -24,12 +24,12 @@ h1, h2, h3 {
   z-index:-100;
 }
 
-.white-70 {
+.white-bg-70 {
   background: rgba(255,255,255,0.7);
 }
 
-.white-85 {
-  background: rgba(255,255,255,0.85);
+.white-bg-100 {
+  background: rgba(255,255,255);
 }
 
 a {
@@ -64,6 +64,30 @@ a {
   padding:0;
   color: #FFFFFF;
   background-color: #1172a7;
+}
+
+.dropdown-menu {
+  background-color: #1172a7;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+@media (min-width: 979px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-item {
+  font-weight: 600;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #00aef7;
+  color: white;
 }
 
 .footer-frost {

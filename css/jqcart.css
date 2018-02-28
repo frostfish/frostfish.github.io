@@ -153,6 +153,7 @@ h2 .jqcart-print-order::before {
 /* Кнопка удаления отдельного товара из корзины */
 .jqcart-del-item {
     display: inline-block;
+    cursor: pointer;
 }
 .jqcart-del-item:hover {
     text-decoration: underline;

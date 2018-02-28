@@ -73,8 +73,8 @@
     addToCart: function(e) {
       e.preventDefault();
       itemData = $(this).data();
+      var lotText = $(GetElementForId('.card-lot-selected', itemData.groupId))[0].innerText;
       var lotData = $(GetElementForId('.card-lot-selected', itemData.groupId)).data();
-
       var count = parseFloat(GetElementForId('.card-amount', itemData.groupId).innerHTML);
       
 			if(typeof lotData.id === 'undefined') {
@@ -89,7 +89,7 @@
           img: itemData.img,
           price: lotData.price * lotData.lot,
           id: lotData.id,
-          title: itemData.title + ' (фасовка ' + lotData.lot + ')',
+          title: itemData.title + ' (фасовка ' + lotText + ')',
           count: count
         };
       }
@@ -365,6 +365,5 @@ $(function(){
     GetElementForId('.card-total-price', groupId).innerHTML = amountLabel.innerHTML * price * lot;
     $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
   });
-
-  
+ 
 });
