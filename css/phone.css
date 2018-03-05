@@ -1,11 +1,11 @@
 .phone-icon {
   display: block;
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  font-size: 5rem;
+  margin-top: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
   background-color: #1172a7;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
   box-shadow: 0 0 0 0em rgba(52, 152, 219, 0), 0em 0.05em 0.1em rgba(0, 0, 0, 0.2);
   -webkit-transform: translate3d(0, 0, 0) scale(1);
           transform: translate3d(0, 0, 0) scale(1);

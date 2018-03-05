@@ -16,90 +16,92 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="catalog">
   	<!-- Header -->
-    <div class="container-fluid text-center white-bg-100">
+    <div class="container-fluid text-center white-bg fixed-top p-0">
       <div class="row vertical-align">
-        <div class="col-lg-4 col-md-12 media">
+        <div class="col-lg-4 col-md-12 col-sm-12 media">
          <a class="align-self-center mx-auto d-block" href="catalog.html"><img class="logo" src="img/logo.png" alt=""></a>
         </div>
-        <div class="col-lg-3 col-md-12 text-center align-self-center">
-          <span class="phone-icon is-animating" data-toggle="modal" data-target="#backCallModal"></span>
+        <div class="col-lg-1 col-md-5 col-sm-5 align-self-center">
+          <span class="phone-icon is-animating float-right" data-toggle="modal" data-target="#backCallModal"></span>
+        </div>
+        <div class="col-lg-3 col-md-7 col-sm-7 text-left align-self-center">
           <span class="phone">8 (495) 208-78-54</span><br/>
           <span class="description" data-toggle="modal" data-target="#backCallModal"><a href="#">заказать обратный звонок</a></span>
-          <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="backCallModalLabel">Заказать обратный звонок</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group row">
-                      <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
-                      <div class="col-lg-9 col-md-9">
-                        <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
-                      </div>
-                    </div>
-                    <div class="form-group row p-0">
-                      <div class="col-lg-12 col-md-12 text-center">
-                        <button type="submit" class="btn btn-frost">Отправить</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="col-lg-2 col-md-7 col-sm-7 text-center align-self-center">
+          <span class="description"><a href="contacts.html">Ступинский пр.,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><br/>
+          <span class="description">ПН-ПТ&nbsp;с&nbsp;9:00&nbsp;до&nbsp;19:00</span>
+        </div>
+        <div class="col-lg-2 col-md-5 col-sm-5 text-center align-self-center">
+          <div class="jqcart-cart-label shopping-cart">
+            <span class="open"><img src="img/shopping-cart.png"></span>
+            <p class="description"><span class="jqcart-total-cnt">0</span>&nbsp;в&nbsp;корзине</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-8 text-center align-self-center">
-          <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><br/>
-          <span class="description">пн.-пт.&nbsp;9:00-19:00</span>
-        </div>
-        <div class="col-lg-1 col-md-4 text-center align-self-center">
-          <div class="jqcart-cart-label shopping-cart ">
-            <span class="open"><img src="img/shopping-cart.png"></span>
-            <p class="description">В корзине: <span class="jqcart-total-cnt">0</span></p>
+      </div>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-frost">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
+                    <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
+                    <a class="dropdown-item" href="catalog.html">Оленина</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="delivery.html">Доставка</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+    <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="backCallModalLabel">Заказать обратный звонок</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                </div>
+              </div>
+              <div class="form-group row p-0">
+                <div class="col-lg-12 col-md-12 text-center">
+                  <button type="submit" class="btn btn-frost">Отправить</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-frost">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars text-light"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Главная</a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
-                <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
-                <a class="dropdown-item" href="catalog.html">Оленина</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="delivery.html">Доставка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">О компании</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <div class="container mt-4">
       <div class="row">
@@ -328,6 +330,662 @@
           </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-1" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/1.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/1.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/2.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/2.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Кижуч</h3>
+              <p class="card-text text-left">
+                Маринованная рыба.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" data-id="1" data-price="1190" data-lot="0.5" class="card-lot">300 гр</span>
+                  <span data-group-id="1" data-id="2" data-price="1020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="1" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="1" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="1" data-title="Кижуч" data-img="img/catalog/1.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-2" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/4.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/4.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Вобла</h3>
+              <p class="card-text text-left">
+                Вяленая вобла.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" data-id="4" data-price="2190" data-lot="1" class="card-lot">1 кг</span>
+                  <span data-group-id="2" data-id="5" data-price="1620" data-lot="3" class="card-lot">3 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="2" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="2" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="2" data-title="Вобла" data-img="img/catalog/2.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/6.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/7.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Икра</h3>
+              <p class="card-text text-left">
+                Свежесоленая икра.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
+                  <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="3" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-1" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/1.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/1.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/2.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/2.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Кижуч</h3>
+              <p class="card-text text-left">
+                Маринованная рыба.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" data-id="1" data-price="1190" data-lot="0.5" class="card-lot">300 гр</span>
+                  <span data-group-id="1" data-id="2" data-price="1020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="1" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="1" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="1" data-title="Кижуч" data-img="img/catalog/1.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-2" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/4.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/4.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Вобла</h3>
+              <p class="card-text text-left">
+                Вяленая вобла.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" data-id="4" data-price="2190" data-lot="1" class="card-lot">1 кг</span>
+                  <span data-group-id="2" data-id="5" data-price="1620" data-lot="3" class="card-lot">3 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="2" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="2" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="2" data-title="Вобла" data-img="img/catalog/2.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/6.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/7.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Икра</h3>
+              <p class="card-text text-left">
+                Свежесоленая икра.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
+                  <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="3" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-1" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/1.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/1.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/2.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/2.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-1">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Кижуч</h3>
+              <p class="card-text text-left">
+                Маринованная рыба.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" data-id="1" data-price="1190" data-lot="0.5" class="card-lot">300 гр</span>
+                  <span data-group-id="1" data-id="2" data-price="1020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="1" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="1" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="1" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="1" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="1" data-title="Кижуч" data-img="img/catalog/1.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-2" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/3.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/4.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/4.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-2">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-2" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-2" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Вобла</h3>
+              <p class="card-text text-left">
+                Вяленая вобла.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" data-id="4" data-price="2190" data-lot="1" class="card-lot">1 кг</span>
+                  <span data-group-id="2" data-id="5" data-price="1620" data-lot="3" class="card-lot">3 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="2" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="2" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="2" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="2" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="2" data-title="Вобла" data-img="img/catalog/2.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="hover-image">
+              <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="1"></li>
+                  <li data-target="#carousel-group-3" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/5.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/6.jpg">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
+                      <img class="d-block img-fluid" src="img/catalog/sm/7.jpg">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Следующая</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Предыдущая</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Икра</h3>
+              <p class="card-text text-left">
+                Свежесоленая икра.
+              </p>
+            </div>
+            <div class="container card-footer">
+              <div class="row card-order text-left">
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
+                  <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
+                </div>
+              </div>
+              <div class="row card-order">
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <span data-group-id="3" class="card-amount">0</span>
+                </div>
+                <div class="col-lg-1 col-md-1 p-0">
+                  <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
+                </div>
+                <div class="col-lg-6 col-md-6 p-0">
+                  <span data-group-id="3" class="card-total-price">0</span> руб
+                </div>
+                <div class="col-lg-2 col-md-2 p-0">
+                  <button class="btn btn-frost btn-cart" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.row -->
 
