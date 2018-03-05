@@ -19,11 +19,38 @@
     <div class="container-fluid text-center white-bg-100">
       <div class="row vertical-align">
         <div class="col-lg-4 col-md-12 media">
-          <a href="catalog.html"><img class="align-self-center mx-auto d-block logo" src="img/logo.png" alt=""></a>
+          <a class="align-self-center mx-auto d-block" href="catalog.html"><img class="logo" src="img/logo.png" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-12 text-center align-self-center">
           <span class="phone"><i class="fa fa-phone"></i> 8 (495) 208-78-54</span><br/>
-          <span class="description">заказать обратный звонок</span>
+          <span class="description" data-toggle="modal" data-target="#backCallModal"><a href="#">заказать обратный звонок</a></span>
+          <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="backCallModalLabel">Заказать обратный звонок</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                      <div class="col-lg-9 col-md-9">
+                        <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                      </div>
+                    </div>
+                    <div class="form-group row p-0">
+                      <div class="col-lg-12 col-md-12 text-center">
+                        <button type="submit" class="btn btn-frost">Отправить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-3 col-md-8 text-center align-self-center">
           <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><br/>
@@ -71,46 +98,46 @@
       </div>
     </nav>
 
-    <div class="container white-bg-70 mt-10 rounded">
+    <div class="container white-bg-70 mt-5 rounded">
       <div class="row p-5">
-        <div class="col-lg-12 col-md-12 mb-3 text-center">
-          <p>Группа компаний <span class="highlight">«FROST FISH»</span> приветствует вас на официальном сайте. У нас богатый многолетний опыт работы на рынке свежемороженой и консервированной рыбы.</p>
+        <div class="col-lg-12 col-md-12">
+          <p>Группа компаний <span class="highlight">«FROST FISH»</span> приветствует вас в своем интернет-магазине! У нас вы можете купить свежую, замороженную в море и консервированную рыбу, оленину, красную икру — полный список товаров есть в <a href="catalog.html">каталоге</a>. <a href="delivery.html">Доставка</a> рыбы и мяса обычно происходит на следующий день, но вы можете <a href="contacts.html">связаться</a> с нашими менеджерами для обсуждения индивидуальных условий.</p>
         </div>
       
-        <div class="col-lg-6 col-md-12 text-center pt-4">
+        <div class="col-lg-6 col-md-12 text-center">
           <h3><i class="fa fa-check-circle" aria-hidden="true"></i> Качественные продукты</h3>
-          <p>Гарантируем температурный режим при хранении продукции</p>
+          <p>Мы предлагаем тщательно отобранный каталог товаров, на все позиции есть сопроводительная документация</p>
           <h3><i class="fa fa-rub" aria-hidden="true"></i> Выгодные цены</h3>
-          <p>Предлагаем оптовые и розничные цены</p>
+          <p>Мы работаем напрямую с производителями, поэтому предлагаем оптимальные оптовые и розничные цены</p>
           <h3><i class="fa fa-rocket" aria-hidden="true"></i> Бесплатная доставка</h3>
-          <p>Быстрая доставка, доступен самовывоз</p>
+          <p>При заказе от 5000 рублей доставка бесплатная</p>
         </div>
         <div class="col-lg-6 col-md-12">
-            <div class="bd-callout bd-callout-info">
-              <h4>Форма заявки</h4>
-              <form class="pl-2 pr-2">
-                <div class="form-group row">
-                  <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
-                  <div class="col-lg-9 col-md-9">
-                    <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
-                  </div>
+          <div class="bd-callout bd-callout-info">
+            <h4>Форма заявки</h4>
+            <form class="pl-2 pr-2">
+              <div class="form-group row">
+                <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
-                <div class="form-group row">
-                  <div class="col-lg-12 col-md-12">
-                    <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
-                  </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-lg-12 col-md-12">
+                  <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
                 </div>
-                <div class="form-group row p-0">
-                  <div class="col-lg-12 col-md-12 text-center">
-                    <button type="submit" class="btn btn-frost">Отправить</button>
-                  </div>
+              </div>
+              <div class="form-group row p-0">
+                <div class="col-lg-12 col-md-12 text-center">
+                  <button type="submit" class="btn btn-frost">Отправить</button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Footer -->
     <footer class="p-2 footer-frost bottom-footer">

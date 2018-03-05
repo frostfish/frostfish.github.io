@@ -46,12 +46,12 @@ a {
 }
 
 .highlight {
-  color: #005478;
+  color: #1172a7;
   font-weight: 800;
 }
 
 .card-body .highlight {
-  color: #005478;
+  color: #1172a7;
   font-weight: 600;
 }
 
@@ -268,4 +268,25 @@ a {
   color: white;
   font-weight: 800;
   line-height: 0.5;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.how-we-work p::first-letter {
+  color: #1172a7;
+  font-weight: bold;
+  font-size: 3rem;
+  float: left;
+  margin-top: 1.5rem;
+  margin-left: -3rem;
+}
+
+.how-we-work p {
+  margin-left: 3rem;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1172a7;
 }

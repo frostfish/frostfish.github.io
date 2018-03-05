@@ -20,11 +20,38 @@
     <div class="container-fluid text-center white-85">
       <div class="row vertical-align">
         <div class="col-lg-4 col-md-12 media">
-          <a href="catalog.html"><img class="align-self-center mx-auto d-block logo" src="img/logo.png" alt=""></a>
+          <a class="align-self-center mx-auto d-block" href="catalog.html"><img class="logo" src="img/logo.png" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-12 text-center align-self-center">
           <span class="phone"><i class="fa fa-phone"></i> 8 (495) 208-78-54</span><br/>
-          <span class="description">заказать обратный звонок</span>
+          <span class="description" data-toggle="modal" data-target="#backCallModal"><a href="#">заказать обратный звонок</a></span>
+          <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="backCallModalLabel">Заказать обратный звонок</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                      <div class="col-lg-9 col-md-9">
+                        <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                      </div>
+                    </div>
+                    <div class="form-group row p-0">
+                      <div class="col-lg-12 col-md-12 text-center">
+                        <button type="submit" class="btn btn-frost">Отправить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-3 col-md-8 text-center align-self-center">
           <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><br/>
@@ -75,18 +102,14 @@
     <div class="container">
       <div class="row mb-2 mt-2">
         <div class="col-lg-12 col-md-12">
-          <h2>Как мы работаем</h2>
+          <h2>О компании</h2>
         </div>
       </div>
       <div class="row mb-2 mt-2">
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <p>1. Вы делаете заказ на сайте через корзину или форму обратной связи.</p>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <p>2. Наш специалист связывается с вами, уточняет детали и согласовывает доставку. Хотите, чтобы мы помогли вам с выбором? Попросите нашего сотрудника :)</p>
-        </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <p>3. Вы получаете заказ в оговоренное время.</p>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <p>Наш коллектив имеет многолетний опыт работы с морскими деликатесаим. Мы любим и знаем своё дело! В ассортименте на сайте вы найдете лишь те продукты, которые мы пробовали сами.</p>
+          <p>Наша компания работает напрямую с рыболовецкими компаниями Дальнего Востока. Это позволяет нам держать низкие цены и контролировать условия хранения продукции с момента вылова или производства. Сопутствующая документация есть для всех товаров.</p>
+          <p>Мы располагаем в Москве большими складскими помещениями с качественным оборудованием и технически оснащенным автомобильным парком с низкотемпературными камерами хранения. Всё это позволяет нам гарантировать неразрывность температурной цепочки и качество товара вплоть до получения вами заказа.</p>
         </div>
       </div>
       <div class="row">
@@ -113,18 +136,43 @@
           </div>
         </div>
       </div>
+      <div class="row mb-2 mt-2">
+        <div class="col-lg-12 col-md-12">
+          <h2>Как мы работаем</h2>
+        </div>
+      </div>
+      <div class="row mb-2 mt-2">
+        <div class="col-lg-4 col-md-12 col-sm-12 align-self-center mx-auto d-block how-we-work">
+          <p>1. Вы делаете заказ на сайте через корзину или форму обратной связи.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 align-self-center mx-auto d-block how-we-work">
+          <p>2. Наш специалист связывается с вами, уточняет детали и согласовывает доставку.</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 align-self-center mx-auto d-block how-we-work">
+          <p>3. Мы доставляем ваш заказ в выбранный временной интервал.</p>
+        </div>
+      </div>
+      <div class="row mb-2 mt-2">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <p>Хотите, чтобы мы помогли вам с выбором? Обратитесь к нашим менеджерам, они пробовали всё :)
+        </div>
+      </div>
       <div class="row mb-4">
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <h3>Контроль качества</h3>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+          <h3 class="text-center">Строгий контроль качества</h3>
           <p>Мы тщательно следим за соблюдением температурного режима и берем рыбу только у проверенных поставщиков. Так мы можем быть уверены, что рыба выросла в природных условиях, замораживалась лишь один раз и не содержит вредных веществ.</p>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <h3>Отличный вкус</h3>
-          <p>Мы выбираем только такую рыбу, которую попробовали сами. Так мы можем быть уверены во вкусе того, что предлагаем вам.</p>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+          <h3 class="text-center">Отличный вкус</h3>
+          <p>Мы продаем только те продукты, которые попробовали сами. Так мы можем быть уверены во вкусе того, что предлагаем вам.</p>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
-          <h3>Справедливая цена</h3>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+          <h3 class="text-center">Оптимальная цена</h3>
           <p>Цена за качественный продукт не может быть низкой. Но мы работаем напрямую с поставщиками без посредников, что позволяет нам снижать издержки и снижать стоимость.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 p-3">
+          <h3 class="text-center">Быстрая обработка заявок</h3>
+          <p>Наши менеджеры свяжутся с вами после оформления заказа для уточнения деталей.</p>
         </div>
       </div>
     </div>
