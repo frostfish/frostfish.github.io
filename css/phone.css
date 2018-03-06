@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
   .phone-icon {
+    cursor: pointer;
     display: block;
     width: 4rem;
     height: 4rem;

@@ -26,7 +26,7 @@
           <span class="phone-icon is-animating float-right" data-toggle="modal" data-target="#backCallModal"></span><span class="phone">8 (495) 208-78-54</span><span class="description" data-toggle="modal" data-target="#backCallModal"><a href="#">заказать обратный звонок</a></span>
         </div>
         <div class="col-md-3 col-7 align-self-center">
-          <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><span class="description">ПН-ПТ&nbsp;с&nbsp;9:00&nbsp;до&nbsp;19:00</span>
+          <span class="description"><a href="contacts.html">Москва,&nbsp;Ступинский проезд,&nbsp;д.&nbsp;1А,&nbsp;стр.&nbsp;5</a></span><span class="description">пн-пт&nbsp;с&nbsp;9:00&nbsp;до&nbsp;19:00</span>
         </div>
         <div class="col-md-2 col-5 align-self-center">
           <div class="jqcart-cart-label">
@@ -38,10 +38,10 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-frost">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars text-light"></i>
+          <button class="navbar-dark navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="true" aria-label="Развернуть меню">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Главная</a>
@@ -68,6 +68,35 @@
         </div>
       </nav>
     </div>
+
+    <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="backCallModalLabel">Заказать обратный звонок</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
+                <div class="col-lg-9 col-md-9">
+                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                </div>
+              </div>
+              <div class="form-group row p-0">
+                <div class="col-lg-12 col-md-12 text-center">
+                  <button type="submit" class="btn btn-frost">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container white-bg-7 mt-5 rounded">
       <div class="row p-5">

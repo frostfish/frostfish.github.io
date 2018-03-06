@@ -76,13 +76,7 @@ a {
 }
 
 .catalog {
-  margin-top: 23rem;
-}
-
-@media (min-width: 979px) {
-  .catalog {
-    margin-top: 12rem;
-  }
+  margin-top: 12rem;
 }
 
 @media (min-width: 979px) {
@@ -191,9 +185,10 @@ a {
   padding: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  border: 1px solid #eee;
-  border-left-width: .25rem;
-  border-radius: .25rem
+  border: 1px solid #ccc;
+  border-left-width: .5rem;
+  border-radius: .5rem;
+  background: rgba(255,255,255,0.5);
 }
 
 .bd-callout h4 {
@@ -215,6 +210,9 @@ a {
 
 .bd-callout-info {
   border-left-color: #1172a7;
+  border: 1px solid #1172a7;
+  border-left-width: .5rem;
+  border-radius: .5rem;
 }
 
 .bd-callout-info h4 {
@@ -222,19 +220,14 @@ a {
 }
 
 .bd-callout-warning {
-  border-left-color: #f0ad4e
+  border-left-color: #f0ad4e;
+  border: 1px solid #f0ad4e;
+  border-left-width: .5rem;
+  border-radius: .5rem;
 }
 
 .bd-callout-warning h4 {
   color: #f0ad4e
-}
-
-.bd-callout-danger {
-  border-left-color: #d9534f
-}
-
-.bd-callout-danger h4 {
-  color: #d9534f
 }
 
 .hover-image {
