@@ -1,5 +1,4 @@
 html, body {
-  height: 99%;
   margin: 0;
   padding: 0;
 }
@@ -42,8 +41,10 @@ a {
 }
 
 .logo {
-  width:100%;
+  max-width: 100%;
   max-height: 8rem;
+  width: auto;
+  height: auto;
 }
 
 .highlight {
@@ -140,13 +141,14 @@ a {
 }
 
 .phone {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #1172a7;
   font-weight: 600;
 }
 
 .description {
   font-size: 1.2rem;
+  margin: 0.1rem;
 }
 
 .address a {

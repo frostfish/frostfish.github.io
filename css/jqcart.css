@@ -9,10 +9,6 @@
     white-space: nowrap;
     cursor: pointer;
 }
-.jqcart-cart-label span {
-    font-size: 3rem;
-    padding: 0.5rem;
-}
 .jqcart-cart-label .jqcart-title {
     width: 70%;
     border-top-left-radius: 10px;
@@ -21,16 +17,15 @@
 }
 .jqcart-cart-label img {
     width: 3rem;
-    margin-top: 0.5rem;
 }
 .jqcart-cart-label p {
     font-size: 1rem;
 }
 .jqcart-cart-label .jqcart-total-cnt {
-    font-size: 1.2rem;
-    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
     color: #1172a7;
-    font-weight: 900;
+    font-weight: bold;
 }
 /* Модальное окно */
 .jqcart-layout {

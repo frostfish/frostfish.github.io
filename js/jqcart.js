@@ -303,7 +303,7 @@ $(function(){
   $.jqCart({
       buttons: '.btn-cart',
       handler: '/php/handler.php',
-      cartLabel: '.shopping-cart',
+      cartLabel: '.jqcart-cart-label',
       visibleLabel: true,
       openByAdding: false,
       currency: 'руб.'
