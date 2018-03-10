@@ -16,8 +16,17 @@
 
 .jqcart-cart-fixed {
     position: fixed;
-    top: 0.5rem;
+    bottom: 4rem;
     right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .jqcart-cart-fixed {
+        position: fixed;
+        top: 0.5rem;
+        bottom: auto;
+        right: 0.5rem;
+    }
 }
 
 .jqcart-cart-label .jqcart-title {
