@@ -8,7 +8,18 @@
 .jqcart-cart-label {
     white-space: nowrap;
     cursor: pointer;
+    padding: 1.2rem;
+    background-color: #e6eff4;
+    border-radius: 10rem;
+    z-index: 100;
 }
+
+.jqcart-cart-fixed {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
 .jqcart-cart-label .jqcart-title {
     width: 70%;
     border-top-left-radius: 10px;

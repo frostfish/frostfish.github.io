@@ -93,6 +93,18 @@
           count: count
         };
       }
+      var scale = 1;
+      var scaleDiff = 0.1;
+      var animation = setInterval(function(){
+        scale += scaleDiff
+        if (scale < 1) {
+          clearInterval(animation);
+          return;
+        } else if (scale > 2) {
+          scaleDiff = -0.1;
+        }
+        $('.jqcart-cart-label').css('transform', 'scale('+scale+')')
+      }, 10)
       actions.setStorage(cartData);
       actions.changeTotalCnt(1);
       label.show();

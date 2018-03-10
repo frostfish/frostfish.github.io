@@ -73,6 +73,7 @@ a {
   border: none;
   border-radius: 0;
   margin: 0;
+  width: 12rem;
 }
 
 .catalog {
@@ -89,6 +90,7 @@ a {
   font-weight: 600;
   color: #FFFFFF;
   text-decoration: none;
+  padding: 0.3rem;
 }
 
 .dropdown-item:hover {
@@ -113,7 +115,7 @@ a {
 }
 
 .navbar-frost .navbar-nav .nav-link {
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  width: 12rem;
 }
 
 .navbar-nav > li > a {
