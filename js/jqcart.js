@@ -22,8 +22,12 @@
         <input type="text" name="user_phone" placeholder="Ваш номер телефона (в произвольном формате)">\
       </p>\
       <p>\
+        <label>Почта:</label>\
+        <input type="text" name="user_mail" placeholder="Ваш адрес электронной почты">\
+      </p>\
+      <p>\
         <label>Коментарий:</label>\
-        <textarea name="user_comment" placeholder="Напишите здесь любой комментарий (не обязательно)"></textarea>\
+        <input type="text" name="user_comment" placeholder="Напишите здесь любой комментарий (не обязательно)">\
       </p>\
       <p>\
         <button id="submit" class="btn btn-success">Отправить заказ</button>\
@@ -181,7 +185,7 @@
       cartData = actions.getStorage();
       orderPreview = '<button id="reset"  type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
       <h2 id="basket">Корзина <span class="jqcart-print-order"></span></h2>\
-      <div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div>ID</div><div></div><div>Наименование</div><div>Цена</div><div>Кол-во</div><div>Сумма</div><div></div></div>';
+      <div class="jqcart-table-wrapper"><div class="jqcart-manage-order"><div class="jqcart-thead"><div></div><div>Наименование</div><div>Цена</div><div>Кол-во</div><div>Сумма</div><div></div></div>';
       var key, sum = 0;
       for (key in cartData) {
         if (cartData.hasOwnProperty(key)) {
@@ -189,18 +193,18 @@
 					subtotal = Math.ceil((subtotal + sum) * 100) / 100;
 
           orderPreview += '<div class="jqcart-tr" data-id="' + cartData[key].id + '">';
-					orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
+					// orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
 					orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
           orderPreview += '<div>' + cartData[key].title + '</div>';
-          orderPreview += '<div class="jqcart-price">' + cartData[key].price + '</div>';
+          orderPreview += '<div class="jqcart-price">' + cartData[key].price.toLocaleString('ru') + ' ' + opts.currency + '</div>';
           orderPreview += '<div><span class="jqcart-incr" data-incr="-1">&#8211;</span><input type="text" class="jqcart-amount" value="' + cartData[key].count + '"><span class="jqcart-incr" data-incr="1">+</span></div>';
-          orderPreview += '<div class="jqcart-sum">' + sum + ' ' + opts.currency + '</div>';
+          orderPreview += '<div class="jqcart-sum">' + (sum).toLocaleString('ru') + ' ' + opts.currency + '</div>';
 					orderPreview += '<div class="jqcart-small-td"><span class="jqcart-del-item">удалить</span></div>';
           orderPreview += '</div>';
         }
       }
       orderPreview += '</div></div>';
-      orderPreview += '<div class="jqcart-subtotal">Итого: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
+      orderPreview += '<div class="jqcart-subtotal">Итого: <strong>' + subtotal.toLocaleString('ru') + '</strong> ' + opts.currency + '</div>';
 
 			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста</h2>';
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
@@ -214,6 +218,7 @@
     sendOrder: function(e) {
       e.preventDefault();
       var user_phone = $('[name=user_phone]').val();
+      var user_mail = $('[name=user_mail]').val();
       var user_comment = $('[name=user_comment]').val();
       if ($('[name=user_phone]').val() === '') {
         $('<p class="jqcart-error">Пожалуйста, укажите контактный телефон</p>').insertAfter($('[name=user_phone]').first()).delay(3000).fadeOut();
@@ -221,17 +226,19 @@
       }
       var user_data = {
         'phone': user_phone,
+        'mail': user_mail,
         'comment': user_comment
       };
       var data = {
-        orderlist: $.param(actions.getStorage()),
+        orderlist: actions.getStorage(),
         userdata: user_data
       };
       $.ajax({
         url: opts.handler,
         type: 'POST',
-				dataType: 'json',
-        data: data,
+				contentType: 'text/plain',
+        dataType: 'json',
+        data: JSON.stringify(data),
         error: function() {},
         success: function(resp) {
           $('.jqcart-checkout').html('<p>' + resp.message + '</p>');
@@ -314,7 +321,7 @@ $(function(){
   // инициализация плагина
   $.jqCart({
       buttons: '.btn-cart',
-      handler: '/php/handler.php',
+      handler: 'http://178.62.214.238/post-order',
       cartLabel: '.jqcart-cart-label',
       visibleLabel: true,
       openByAdding: false,
@@ -328,7 +335,6 @@ $(function(){
     $.jqCart('clearCart'); // очистить корзину
   });
   $('.card-lot').click(function(o) {
-    console.log(o);
     var id = o.target.dataset['id'];
     var groupId = o.target.dataset['groupId'];
     var lot = o.target.dataset['lot'];

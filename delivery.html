@@ -49,11 +49,11 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post" action='http://178.62.214.238/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
               </div>
               <div class="form-group row p-0">
@@ -79,7 +79,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
                 <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
                 <a class="dropdown-item" href="catalog.html">Оленина</a>
@@ -104,7 +104,7 @@
         <div class="col-lg-7 col-md-12">
           <h2>Условия доставки</h2>
           <p>Доставка осуществляется по Москве, обычно на следующий день. Мы ценим ваше время, поэтому доставка гарантированно происходит в выбранный вами интервал.</p>
-          <div class="bd-callout bd-callout-warning">
+          <div class="bd-callout bd-callout-info">
             <p>При заказе продукции на сумму более <span class="highlight">5 000</span> рублей, доставка осуществляется <span class="highlight">бесплатно</span>.</p>
           </div>
           <p>При заказе продукции на сумму менее 5 000 рублей, стоимость доставки составит 500 рублей, либо вы можете бесплатно забрать свой заказ самостоятельно с <a href="contacts.html">нашего склада</a>. Точные дата и время доставки согласовываются с нашими менеджерами — они предложат вам оптимальные условия.</p>

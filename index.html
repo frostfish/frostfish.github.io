@@ -49,11 +49,11 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post" action='http://178.62.214.238/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
               </div>
               <div class="form-group row p-0">
@@ -79,7 +79,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
                 <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
                 <a class="dropdown-item" href="catalog.html">Оленина</a>
@@ -116,16 +116,16 @@
         <div class="col-lg-6 col-md-12">
           <div class="bd-callout bd-callout-info">
             <h4>Форма заявки</h4>
-            <form class="pl-2 pr-2">
+            <form class="pl-2 pr-2" method="post" action='http://178.62.214.238/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-lg-12 col-md-12">
-                  <textarea class="form-control" id="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
+                  <textarea class="form-control" name="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
                 </div>
               </div>
               <div class="form-group row p-0">

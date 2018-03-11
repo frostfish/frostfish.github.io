@@ -50,11 +50,11 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post" action='http://178.62.214.238/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
               </div>
               <div class="form-group row p-0">
@@ -80,7 +80,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
                 <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
                 <a class="dropdown-item" href="catalog.html">Оленина</a>
@@ -125,16 +125,46 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center how-we-work">
-          1. Вы делаете заказ на сайте через корзину или форму обратной связи.
+        <div class="col-12">
+            <img class="width-100" src="img/about/howwework.svg">
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center how-we-work">
-          2. Наш специалист связывается с вами, уточняет детали и согласовывает доставку.
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center how-we-work">
-          3. Мы доставляем ваш заказ в выбранный временной интервал.
+      </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <div id="carousel-about" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-about" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-about" data-slide-to="1"></li>
+              <li data-target="#carousel-about" data-slide-to="2"></li>
+              <li data-target="#carousel-about" data-slide-to="3"></li>
+              <li data-target="#carousel-about" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="width-100" src="img/about/1.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="width-100" src="img/about/2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="width-100" src="img/about/3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="width-100" src="img/about/4.jpg">
+              </div>
+              <div class="carousel-item">
+                <img class="width-100" src="img/about/5.jpg">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-about" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Следующая</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-about" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Предыдущая</span>
+            </a>
+          </div>
         </div>
       </div>
       <div class="row mt-5">

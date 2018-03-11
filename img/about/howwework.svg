@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="59.548889mm"
+   height="8.748889mm"
+   viewBox="0 0 211 31"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="howwework.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker6267"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(-0.6,-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6269"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4298"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4280"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4292"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4298-4"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-57"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4298-49"
+         style="fill:#1172a7;fill-opacity:1;fill-rule:evenodd;stroke:#1172a7;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="306.29193"
+     inkscape:cy="-113.77142"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:window-width="1918"
+     inkscape:window-height="1042"
+     inkscape:window-x="0"
+     inkscape:window-y="37"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4138"
+       originx="-25"
+       originy="-909" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25,-112.36221)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#1172a7;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4140"
+       width="60"
+       height="29.999992"
+       x="25.5"
+       y="112.86221" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="55.501373"
+       y="119.22283"
+       id="text4163"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4165"
+         x="55.501373"
+         y="119.22283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5.625px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000">Вы делаете заказ на</tspan><tspan
+         sodipodi:role="line"
+         x="55.501373"
+         y="126.25408"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5.625px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4167">сайте через корзину</tspan><tspan
+         sodipodi:role="line"
+         x="55.501373"
+         y="133.28534"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5.625px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4169">или форму обратной</tspan><tspan
+         sodipodi:role="line"
+         x="55.501373"
+         y="140.31659"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5.625px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4171">связи.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="130.60132"
+       y="119.68837"
+       id="text4163-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="130.60132"
+         y="119.68837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4171-5">Наш специалист</tspan><tspan
+         sodipodi:role="line"
+         x="130.60132"
+         y="125.93837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4244">связывается с вами,</tspan><tspan
+         sodipodi:role="line"
+         x="130.60132"
+         y="132.18837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4242">уточняет детали и</tspan><tspan
+         sodipodi:role="line"
+         x="130.60132"
+         y="138.43837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:5px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4246">согласовывает доставку.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="205.55798"
+       y="121.55118"
+       id="text4163-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="205.55798"
+         y="121.55118"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:6.25px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4171-9">Мы доставляем ваш</tspan><tspan
+         sodipodi:role="line"
+         x="205.55798"
+         y="129.36368"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:6.25px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4257">заказ в выбранный</tspan><tspan
+         sodipodi:role="line"
+         x="205.55798"
+         y="137.17618"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:6.25px;line-height:125%;font-family:'Liberation Sans Narrow';-inkscape-font-specification:'Liberation Sans Narrow, Condensed';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000"
+         id="tspan4263">временной интервал.</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#1172a7;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 85.5,127.8718 10,0"
+       id="path4265"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#1172a7;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4140-9"
+       width="60"
+       height="29.999992"
+       x="100.5"
+       y="112.86221" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#1172a7;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6267)"
+       d="m 160.5,127.87179 10,0"
+       id="path4265-4"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#1172a7;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4140-9-5"
+       width="60"
+       height="29.999992"
+       x="175.5"
+       y="112.86221" />
+  </g>
+</svg>

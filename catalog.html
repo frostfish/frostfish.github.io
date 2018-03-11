@@ -50,11 +50,11 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form method="post" action='http://178.62.214.238/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" id="client_phone" placeholder="Номер телефона в любом формате">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
                 </div>
               </div>
               <div class="form-group row p-0">
@@ -80,7 +80,7 @@
             </li>
             <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="catalog.html">Каталог</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="catalog.html">Свежемороженная рыба</a>
                 <a class="dropdown-item" href="catalog.html">Рыба холодного копчения</a>
                 <a class="dropdown-item" href="catalog.html">Оленина</a>
@@ -108,813 +108,1023 @@
       </div>
       <div class="row text-center">
 
-        <div class="col-lg-4 col-md-6 col-12 mb-4">
-          <div class="card">
-            <div class="hover-image">
-              <div id="carousel-group-1" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-group-1" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-group-1" data-slide-to="1"></li>
-                  <li data-target="#carousel-group-1" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <a href="img/catalog/1.jpg" data-toggle="lightbox" data-gallery="group-1">
-                      <img class="d-block img-fluid" src="img/catalog/1.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/2.jpg" data-toggle="lightbox" data-gallery="group-1">
-                      <img class="d-block img-fluid" src="img/catalog/2.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-1">
-                      <img class="d-block img-fluid" src="img/catalog/3.jpg">
-                    </a>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-group-1" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Следующая</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-group-1" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Предыдущая</span>
-                </a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Кижуч</h3>
-              <p class="card-text text-left">
-                Маринованная рыба.
-              </p>
-            </div>
-            <div class="container card-footer">
-              <div class="row card-order text-left">
-                <div class="col-6 p-0">
-                  <span data-group-id="1" data-id="1" data-price="1190" data-lot="0.5" class="card-lot">300 гр</span>
-                  <span data-group-id="1" data-id="2" data-price="1020" data-lot="2" class="card-lot">2 кг</span>
-                </div>
-                <div class="col-6 p-0">
-                  Цена за кг: <span data-group-id="1" class="card-lot-price highlight">0</span> руб
-                </div>
-              </div>
-              <div class="row card-order">
-                <div class="col-1 p-0">
-                  <button data-group-id="1" class="btn btn-amount card-amount-del">&#8722;</button>
-                </div>
-                <div class="col-1 p-0">
-                  <span data-group-id="1" class="card-amount">0</span>
-                </div>
-                <div class="col-1 p-0">
-                  <button data-group-id="1" class="btn btn-amount card-amount-add">+</button>
-                </div>
-                <div class="col-6 p-0">
-                  <span data-group-id="1" class="card-total-price">0</span> руб
-                </div>
-                <div class="col-3 p-0">
-                  <button class="btn btn-frost btn-cart float-right" data-group-id="1" data-title="Кижуч" data-img="img/catalog/1.jpg">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="hover-image">
-              <div id="carousel-group-2" class="carousel slide" data-ride="carousel"  data-interval="false">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-group-2" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-group-2" data-slide-to="1"></li>
-                  <li data-target="#carousel-group-2" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <a href="img/catalog/3.jpg" data-toggle="lightbox" data-gallery="group-2">
-                      <img class="d-block img-fluid" src="img/catalog/3.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/4.jpg" data-toggle="lightbox" data-gallery="group-2">
-                      <img class="d-block img-fluid" src="img/catalog/4.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-2">
-                      <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                    </a>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-group-2" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Следующая</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-group-2" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Предыдущая</span>
-                </a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Вобла</h3>
-              <p class="card-text text-left">
-                Вяленая вобла.
-              </p>
-            </div>
-            <div class="container card-footer">
-              <div class="row card-order text-left">
-                <div class="col-6 p-0">
-                  <span data-group-id="2" data-id="4" data-price="2190" data-lot="1" class="card-lot">1 кг</span>
-                  <span data-group-id="2" data-id="5" data-price="1620" data-lot="3" class="card-lot">3 кг</span>
-                </div>
-                <div class="col-6 p-0">
-                  Цена за кг: <span data-group-id="2" class="card-lot-price highlight">0</span> руб
-                </div>
-              </div>
-              <div class="row card-order">
-                <div class="col-1 p-0">
-                  <button data-group-id="2" class="btn btn-amount card-amount-del">&#8722;</button>
-                </div>
-                <div class="col-1 p-0">
-                  <span data-group-id="2" class="card-amount">0</span>
-                </div>
-                <div class="col-1 p-0">
-                  <button data-group-id="2" class="btn btn-amount card-amount-add">+</button>
-                </div>
-                <div class="col-6 p-0">
-                  <span data-group-id="2" class="card-total-price">0</span> руб
-                </div>
-                <div class="col-3 p-0">
-                  <button class="btn btn-frost btn-cart float-right" data-group-id="2" data-title="Вобла" data-img="img/catalog/2.jpg">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <div class="hover-image">
-              <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                  <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                      <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                      <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                    </a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                      <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                    </a>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Следующая</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Предыдущая</span>
-                </a>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Икра</h3>
-              <p class="card-text text-left">
-                Свежесоленая икра.
-              </p>
-            </div>
-            <div class="container card-footer">
-              <div class="row card-order text-left">
-                <div class="col-6 p-0">
-                  <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                  <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                </div>
-                <div class="col-6 p-0">
-                  Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                </div>
-              </div>
-              <div class="row card-order">
-                <div class="col-1 p-0">
-                  <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                </div>
-                <div class="col-1 p-0">
-                  <span data-group-id="3" class="card-amount">0</span>
-                </div>
-                <div class="col-1 p-0">
-                  <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                </div>
-                <div class="col-6 p-0">
-                  <span data-group-id="3" class="card-total-price">0</span> руб
-                </div>
-                <div class="col-3 p-0">
-                  <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- delete me -->
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="hover-image">
-                <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                    <li data-target="#carousel-group-3" data-slide-to="2"></li>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-ikra-kizhuch" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-ikra-kizhuch" data-slide-to="1"></li>
                   </ol>
-                  <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                      <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                        <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                        <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                      </a>
-                    </div>
-                    <div class="carousel-item">
-                      <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                        <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                      </a>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Следующая</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Предыдущая</span>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Икра</h3>
-                <p class="card-text text-left">
-                  Свежесоленая икра.
-                </p>
-              </div>
-              <div class="container card-footer">
-                <div class="row card-order text-left">
-                  <div class="col-6 p-0">
-                    <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                    <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                  </div>
-                  <div class="col-6 p-0">
-                    Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                  </div>
-                </div>
-                <div class="row card-order">
-                  <div class="col-1 p-0">
-                    <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                  </div>
-                  <div class="col-1 p-0">
-                    <span data-group-id="3" class="card-amount">0</span>
-                  </div>
-                  <div class="col-1 p-0">
-                    <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                  </div>
-                  <div class="col-6 p-0">
-                    <span data-group-id="3" class="card-total-price">0</span> руб
-                  </div>
-                  <div class="col-3 p-0">
-                    <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="img/catalog/ikra-kizhuch/1.jpg" data-toggle="lightbox" data-gallery="group-ikra-kizhuch">
+              <img class="d-block img-fluid" src="img/catalog/ikra-kizhuch/1.jpg">
+            </a>
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card">
-                <div class="hover-image">
-                  <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                      <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item active">
-                        <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                          <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                        </a>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                          <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                        </a>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                          <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                        </a>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Следующая</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Предыдущая</span>
-                    </a>
                   </div>
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Икра</h3>
-                  <p class="card-text text-left">
-                    Свежесоленая икра.
-                  </p>
-                </div>
-                <div class="container card-footer">
-                  <div class="row card-order text-left">
-                    <div class="col-6 p-0">
-                      <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                      <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                    </div>
-                    <div class="col-6 p-0">
-                      Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                    </div>
+        <a class="carousel-control-prev" href="#carousel-group-ikra-kizhuch" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-ikra-kizhuch" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Икра кижуча</h3>
+      <p class="card-text text-left">
+        Место вылова: Камчатка. Пищевая ценность 100г продукта: белок - 31г, жиры - 13г. Энергетическая ценность: 249 ккал. Хранить при температуре от - 4'С до -6'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="ikra-kizhuch" data-id="ikra-kizhuch-0.5" data-price="4300" data-lot="0.5" class="card-lot">0.5 кг</span>
+                    <span data-group-id="ikra-kizhuch" data-id="ikra-kizhuch-0.25" data-price="4400" data-lot="0.25" class="card-lot">0.25 кг</span>
                   </div>
-                  <div class="row card-order">
-                    <div class="col-1 p-0">
-                      <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                    </div>
-                    <div class="col-1 p-0">
-                      <span data-group-id="3" class="card-amount">0</span>
-                    </div>
-                    <div class="col-1 p-0">
-                      <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                    </div>
-                    <div class="col-6 p-0">
-                      <span data-group-id="3" class="card-total-price">0</span> руб
-                    </div>
-                    <div class="col-3 p-0">
-                      <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                    </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="ikra-kizhuch" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="ikra-kizhuch" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="ikra-kizhuch" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="ikra-kizhuch" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="ikra-kizhuch" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="ikra-kizhuch" data-title="Икра кижуча" data-img="img/catalog/ikra-kizhuch/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-ikra-keta" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-ikra-keta" data-slide-to="1"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/ikra-keta/1.jpg" data-toggle="lightbox" data-gallery="group-ikra-keta">
+              <img class="d-block img-fluid" src="img/catalog/ikra-keta/1.jpg">
+            </a>
+          </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                  <div class="hover-image">
-                    <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                        <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                          <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                            <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                            <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                          </a>
-                        </div>
-                        <div class="carousel-item">
-                          <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                            <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                          </a>
-                        </div>
-                      </div>
-                      <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Следующая</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Предыдущая</span>
-                      </a>
-                    </div>
+        <a class="carousel-control-prev" href="#carousel-group-ikra-keta" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-ikra-keta" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Икра кеты</h3>
+      <p class="card-text text-left">
+        Место вылова: Чукотка Пищевая ценность 100 г продукта: белок – 31.5 г, жиры – 13.2 г. Энергетическая ценность: 249 ккал. Хранить при температуре от - 4'С до -6'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="ikra-keta" data-id="ikra-keta-0.5" data-price="3600" data-lot="0.5" class="card-lot">0.5 кг</span>
+                    <span data-group-id="ikra-keta" data-id="ikra-keta-0.25" data-price="3700" data-lot="0.25" class="card-lot">0.25 кг</span>
                   </div>
-                  <div class="card-body">
-                    <h3 class="card-title">Икра</h3>
-                    <p class="card-text text-left">
-                      Свежесоленая икра.
-                    </p>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="ikra-keta" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="ikra-keta" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="ikra-keta" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="ikra-keta" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="ikra-keta" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="ikra-keta" data-title="Икра кеты" data-img="img/catalog/ikra-keta/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-keta-psg" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-keta-psg" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-keta-psg" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-keta-psg" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/keta-psg/1.jpg" data-toggle="lightbox" data-gallery="group-keta-psg">
+              <img class="d-block img-fluid" src="img/catalog/keta-psg/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/keta-psg/2.jpg" data-toggle="lightbox" data-gallery="group-keta-psg">
+              <img class="d-block img-fluid" src="img/catalog/keta-psg/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/keta-psg/3.jpg" data-toggle="lightbox" data-gallery="group-keta-psg">
+              <img class="d-block img-fluid" src="img/catalog/keta-psg/3.jpg">
+            </a>
+          </div>
                   </div>
-                  <div class="container card-footer">
-                    <div class="row card-order text-left">
-                      <div class="col-6 p-0">
-                        <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                        <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                      </div>
-                      <div class="col-6 p-0">
-                        Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                      </div>
-                    </div>
-                    <div class="row card-order">
-                      <div class="col-1 p-0">
-                        <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                      </div>
-                      <div class="col-1 p-0">
-                        <span data-group-id="3" class="card-amount">0</span>
-                      </div>
-                      <div class="col-1 p-0">
-                        <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                      </div>
-                      <div class="col-6 p-0">
-                        <span data-group-id="3" class="card-total-price">0</span> руб
-                      </div>
-                      <div class="col-3 p-0">
-                        <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                      </div>
-                    </div>
+        <a class="carousel-control-prev" href="#carousel-group-keta-psg" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-keta-psg" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Кета ПСГ</h3>
+      <p class="card-text text-left">
+        
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
                   </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <div class="card">
-                    <div class="hover-image">
-                      <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                          <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                          <div class="carousel-item active">
-                            <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                              <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                            </a>
-                          </div>
-                          <div class="carousel-item">
-                            <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                              <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                            </a>
-                          </div>
-                          <div class="carousel-item">
-                            <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                              <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                            </a>
-                          </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Следующая</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Предыдущая</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Икра</h3>
-                      <p class="card-text text-left">
-                        Свежесоленая икра.
-                      </p>
-                    </div>
-                    <div class="container card-footer">
-                      <div class="row card-order text-left">
-                        <div class="col-6 p-0">
-                          <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                          <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                        </div>
-                        <div class="col-6 p-0">
-                          Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                        </div>
-                      </div>
-                      <div class="row card-order">
-                        <div class="col-1 p-0">
-                          <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                        </div>
-                        <div class="col-1 p-0">
-                          <span data-group-id="3" class="card-amount">0</span>
-                        </div>
-                        <div class="col-1 p-0">
-                          <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                        </div>
-                        <div class="col-6 p-0">
-                          <span data-group-id="3" class="card-total-price">0</span> руб
-                        </div>
-                        <div class="col-3 p-0">
-                          <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                        </div>
-                      </div>
-                    </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="keta-psg" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="keta-psg" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="keta-psg" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="keta-psg" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="keta-psg" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="keta-psg" data-title="Кета ПСГ" data-img="img/catalog/keta-psg/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-kizhuch-psg" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-kizhuch-psg" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-kizhuch-psg" data-slide-to="2"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/kizhuch-psg/1.jpg" data-toggle="lightbox" data-gallery="group-kizhuch-psg">
+              <img class="d-block img-fluid" src="img/catalog/kizhuch-psg/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/kizhuch-psg/2.jpg" data-toggle="lightbox" data-gallery="group-kizhuch-psg">
+              <img class="d-block img-fluid" src="img/catalog/kizhuch-psg/2.jpg">
+            </a>
+          </div>
                   </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <div class="hover-image">
-                        <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                          <ol class="carousel-indicators">
-                            <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                            <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                          </ol>
-                          <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                              <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                              </a>
-                            </div>
-                            <div class="carousel-item">
-                              <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                              </a>
-                            </div>
-                            <div class="carousel-item">
-                              <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                              </a>
-                            </div>
-                          </div>
-                          <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Следующая</span>
-                          </a>
-                          <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Предыдущая</span>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <h3 class="card-title">Икра</h3>
-                        <p class="card-text text-left">
-                          Свежесоленая икра.
-                        </p>
-                      </div>
-                      <div class="container card-footer">
-                        <div class="row card-order text-left">
-                          <div class="col-6 p-0">
-                            <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                            <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                          </div>
-                          <div class="col-6 p-0">
-                            Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                          </div>
-                        </div>
-                        <div class="row card-order">
-                          <div class="col-1 p-0">
-                            <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                          </div>
-                          <div class="col-1 p-0">
-                            <span data-group-id="3" class="card-amount">0</span>
-                          </div>
-                          <div class="col-1 p-0">
-                            <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                          </div>
-                          <div class="col-6 p-0">
-                            <span data-group-id="3" class="card-total-price">0</span> руб
-                          </div>
-                          <div class="col-3 p-0">
-                            <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <a class="carousel-control-prev" href="#carousel-group-kizhuch-psg" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-kizhuch-psg" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Кижуч свежемороженый</h3>
+      <p class="card-text text-left">
+        Место вылова: г. Магадан. Пищевая ценность на 100 г: белки 21.6 г., жиры 6 г. Энергетическая ценность: 140 ккал. Хранить при температуре - 18С Срок годности 12 месяцев 
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="kizhuch-psg" data-id="kizhuch-psg-3.5" data-price="0" data-lot="3.5" class="card-lot">3.5 кг</span>
+                    <span data-group-id="kizhuch-psg" data-id="kizhuch-psg-20" data-price="0" data-lot="20" class="card-lot">20 кг</span>
                   </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="kizhuch-psg" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="kizhuch-psg" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="kizhuch-psg" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="kizhuch-psg" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="kizhuch-psg" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="kizhuch-psg" data-title="Кижуч свежемороженый" data-img="img/catalog/kizhuch-psg/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-muksun" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-muksun" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-muksun" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-muksun" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/muksun/1.jpg" data-toggle="lightbox" data-gallery="group-muksun">
+              <img class="d-block img-fluid" src="img/catalog/muksun/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/muksun/2.jpg" data-toggle="lightbox" data-gallery="group-muksun">
+              <img class="d-block img-fluid" src="img/catalog/muksun/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/muksun/3.jpg" data-toggle="lightbox" data-gallery="group-muksun">
+              <img class="d-block img-fluid" src="img/catalog/muksun/3.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-muksun" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-muksun" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Муксун свежемороженый</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха, Якутия. Пищевая ценность на 100 г.: Энергетическая ценность: 121 ккал. белки 18.5 г., жиры 5,2 г., Хранить при температуре - 18'С Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="muksun" data-id="muksun-1.3" data-price="0" data-lot="1.3" class="card-lot">1.3 кг</span>
+                    <span data-group-id="muksun" data-id="muksun-10" data-price="0" data-lot="10" class="card-lot">10 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="muksun" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="muksun" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="muksun" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="muksun" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="muksun" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="muksun" data-title="Муксун свежемороженый" data-img="img/catalog/muksun/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-nelma" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-nelma" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-nelma" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-nelma" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/nelma/1.jpg" data-toggle="lightbox" data-gallery="group-nelma">
+              <img class="d-block img-fluid" src="img/catalog/nelma/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/nelma/2.jpg" data-toggle="lightbox" data-gallery="group-nelma">
+              <img class="d-block img-fluid" src="img/catalog/nelma/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/nelma/3.jpg" data-toggle="lightbox" data-gallery="group-nelma">
+              <img class="d-block img-fluid" src="img/catalog/nelma/3.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-nelma" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-nelma" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Нельма свежемороженая</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха, Якутия. Пищевая ценность на 100 г.: Белки 19.4 г., жиры 9.2 г. Энергетическая ценность: 160 ккал. Хранить при температуре - 18'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="nelma" data-id="nelma-2.5" data-price="0" data-lot="2.5" class="card-lot">2.5 кг</span>
+                    <span data-group-id="nelma" data-id="nelma-11" data-price="0" data-lot="11" class="card-lot">11 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="nelma" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="nelma" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="nelma" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="nelma" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="nelma" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="nelma" data-title="Нельма свежемороженая" data-img="img/catalog/nelma/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-omul" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-omul" data-slide-to="1"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/omul/1.jpg" data-toggle="lightbox" data-gallery="group-omul">
+              <img class="d-block img-fluid" src="img/catalog/omul/1.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-omul" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-omul" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Омуль свежемороженый </h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха Якутия. Пищевая ценность на 100 г.: Белки 19.2 г., жиры 8.3 г. Энергетическая ценность: 152 ккал. Хранить при температуре - 18'С Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="omul" data-id="omul-1.3" data-price="0" data-lot="1.3" class="card-lot">1.3 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="omul" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="omul" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="omul" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="omul" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="omul" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="omul" data-title="Омуль свежемороженый " data-img="img/catalog/omul/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-ryapushka" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-ryapushka" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-ryapushka" data-slide-to="2"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/ryapushka/1.jpg" data-toggle="lightbox" data-gallery="group-ryapushka">
+              <img class="d-block img-fluid" src="img/catalog/ryapushka/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/ryapushka/2.jpg" data-toggle="lightbox" data-gallery="group-ryapushka">
+              <img class="d-block img-fluid" src="img/catalog/ryapushka/2.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-ryapushka" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-ryapushka" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Ряпушка свежемороженая</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха Якутия Пищевая ценность на 100 г.: Белки 17.5 г., жиры 2 г. Энергетическая ценность: 88 ккал. Хранить при температуре - 18'С. Срок годности 12 месяцев. 
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="ryapushka" data-id="ryapushka-0.3" data-price="0" data-lot="0.3" class="card-lot">0.3 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="ryapushka" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="ryapushka" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="ryapushka" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="ryapushka" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="ryapushka" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="ryapushka" data-title="Ряпушка свежемороженая" data-img="img/catalog/ryapushka/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-sig" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-sig" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-sig" data-slide-to="2"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/sig/1.jpg" data-toggle="lightbox" data-gallery="group-sig">
+              <img class="d-block img-fluid" src="img/catalog/sig/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/sig/2.jpg" data-toggle="lightbox" data-gallery="group-sig">
+              <img class="d-block img-fluid" src="img/catalog/sig/2.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-sig" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-sig" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Сиг свежемороженый</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха Якутия Пищевая ценность на 100 г.: Белки 17.5 г., жиры 2 г. Энергетическая ценность: 88 ккал. Хранить при температуре - 18'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="sig" data-id="sig-0.8" data-price="0" data-lot="0.8" class="card-lot">0.8 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="sig" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="sig" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="sig" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="sig" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="sig" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="sig" data-title="Сиг свежемороженый" data-img="img/catalog/sig/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-steik-semga" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-steik-semga" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-steik-semga" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-steik-semga" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/steik-semga/1.jpg" data-toggle="lightbox" data-gallery="group-steik-semga">
+              <img class="d-block img-fluid" src="img/catalog/steik-semga/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/steik-semga/2.jpg" data-toggle="lightbox" data-gallery="group-steik-semga">
+              <img class="d-block img-fluid" src="img/catalog/steik-semga/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/steik-semga/3.jpg" data-toggle="lightbox" data-gallery="group-steik-semga">
+              <img class="d-block img-fluid" src="img/catalog/steik-semga/3.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-steik-semga" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-steik-semga" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Стейк семги свежемороженый</h3>
+      <p class="card-text text-left">
+        Место вылова: Страна Чили Пищевая ценность на 100 г.: Белки 20 г., жиры 8.1 г. Энергетическая ценность: 153 ккал. Хранить при температуре - 18'С Срок годности 18 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="steik-semga" data-id="steik-semga-0.4" data-price="0" data-lot="0.4" class="card-lot">0.4 кг</span>
+                    <span data-group-id="steik-semga" data-id="steik-semga-10" data-price="0" data-lot="10" class="card-lot">10 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="steik-semga" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="steik-semga" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="steik-semga" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="steik-semga" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="steik-semga" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="steik-semga" data-title="Стейк семги свежемороженый" data-img="img/catalog/steik-semga/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-treska-psg" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-treska-psg" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-treska-psg" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-treska-psg" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/treska-psg/1.jpg" data-toggle="lightbox" data-gallery="group-treska-psg">
+              <img class="d-block img-fluid" src="img/catalog/treska-psg/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/treska-psg/2.jpg" data-toggle="lightbox" data-gallery="group-treska-psg">
+              <img class="d-block img-fluid" src="img/catalog/treska-psg/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/treska-psg/3.jpg" data-toggle="lightbox" data-gallery="group-treska-psg">
+              <img class="d-block img-fluid" src="img/catalog/treska-psg/3.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-treska-psg" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-treska-psg" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Треска потрошенная без головы свежемороженая</h3>
+      <p class="card-text text-left">
+        Место вылова: г. Мурманск (Баренцево море) Пищевая ценность на 100 г.: Белки 16 г., жиры 0.6 г. Энергетическая ценность: 69 ккал. Хранить при температуре - 18'С Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="treska-psg" data-id="treska-psg-1.5" data-price="0" data-lot="1.5" class="card-lot">1.5 кг</span>
+                    <span data-group-id="treska-psg" data-id="treska-psg-10" data-price="0" data-lot="10" class="card-lot">10 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="treska-psg" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="treska-psg" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="treska-psg" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="treska-psg" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="treska-psg" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="treska-psg" data-title="Треска потрошенная без головы свежемороженая" data-img="img/catalog/treska-psg/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-file-treska-bez-kozhi" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-file-treska-bez-kozhi" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-file-treska-bez-kozhi" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-file-treska-bez-kozhi" data-slide-to="3"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/file-treska-bez-kozhi/1.jpg" data-toggle="lightbox" data-gallery="group-file-treska-bez-kozhi">
+              <img class="d-block img-fluid" src="img/catalog/file-treska-bez-kozhi/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/file-treska-bez-kozhi/2.jpg" data-toggle="lightbox" data-gallery="group-file-treska-bez-kozhi">
+              <img class="d-block img-fluid" src="img/catalog/file-treska-bez-kozhi/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/file-treska-bez-kozhi/3.jpg" data-toggle="lightbox" data-gallery="group-file-treska-bez-kozhi">
+              <img class="d-block img-fluid" src="img/catalog/file-treska-bez-kozhi/3.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-file-treska-bez-kozhi" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-file-treska-bez-kozhi" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Треска филе без кожи</h3>
+      <p class="card-text text-left">
+        Блочной заморозки (выработана в море). Место вылова: г. Мурманск (Баренцево море) Пищевая ценность на 100 г.: Белки 16 г., жиры 0.6 г. Энергетическая ценность: 69 ккал. Хранить при температуре - 18'С Срок годности 24 месяца.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="file-treska-bez-kozhi" data-id="file-treska-bez-kozhi-0.7" data-price="0" data-lot="0.7" class="card-lot">0.7 кг</span>
+                    <span data-group-id="file-treska-bez-kozhi" data-id="file-treska-bez-kozhi-6.81" data-price="0" data-lot="6.81" class="card-lot">6.81 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="file-treska-bez-kozhi" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="file-treska-bez-kozhi" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="file-treska-bez-kozhi" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="file-treska-bez-kozhi" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="file-treska-bez-kozhi" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="file-treska-bez-kozhi" data-title="Треска филе без кожи" data-img="img/catalog/file-treska-bez-kozhi/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-file-treska-na-kozhe" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-file-treska-na-kozhe" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-file-treska-na-kozhe" data-slide-to="2"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/file-treska-na-kozhe/1.jpg" data-toggle="lightbox" data-gallery="group-file-treska-na-kozhe">
+              <img class="d-block img-fluid" src="img/catalog/file-treska-na-kozhe/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/file-treska-na-kozhe/2.jpg" data-toggle="lightbox" data-gallery="group-file-treska-na-kozhe">
+              <img class="d-block img-fluid" src="img/catalog/file-treska-na-kozhe/2.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-file-treska-na-kozhe" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-file-treska-na-kozhe" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Треска филе на коже</h3>
+      <p class="card-text text-left">
+        Блочной заморозки (выработана в море). Место вылова: г. Мурманск (Баренцево море) Пищевая ценность на 100 г.: Белки 16 г., жиры 0.6 г. Энергетическая ценность: 69 ккал. Хранить при температуре - 18'С Срок годности 24 месяца.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="file-treska-na-kozhe" data-id="file-treska-na-kozhe-0.7" data-price="0" data-lot="0.7" class="card-lot">0.7 кг</span>
+                    <span data-group-id="file-treska-na-kozhe" data-id="file-treska-na-kozhe-6.81" data-price="0" data-lot="6.81" class="card-lot">6.81 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="file-treska-na-kozhe" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="file-treska-na-kozhe" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="file-treska-na-kozhe" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="file-treska-na-kozhe" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="file-treska-na-kozhe" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="file-treska-na-kozhe" data-title="Треска филе на коже" data-img="img/catalog/file-treska-na-kozhe/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-forel-karelia" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-forel-karelia" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-forel-karelia" data-slide-to="2"></li>
+                    <li data-target="#carousel-group-forel-karelia" data-slide-to="3"></li>
+                    <li data-target="#carousel-group-forel-karelia" data-slide-to="4"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/forel-karelia/1.jpg" data-toggle="lightbox" data-gallery="group-forel-karelia">
+              <img class="d-block img-fluid" src="img/catalog/forel-karelia/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/forel-karelia/2.jpg" data-toggle="lightbox" data-gallery="group-forel-karelia">
+              <img class="d-block img-fluid" src="img/catalog/forel-karelia/2.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/forel-karelia/3.jpg" data-toggle="lightbox" data-gallery="group-forel-karelia">
+              <img class="d-block img-fluid" src="img/catalog/forel-karelia/3.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/forel-karelia/4.jpg" data-toggle="lightbox" data-gallery="group-forel-karelia">
+              <img class="d-block img-fluid" src="img/catalog/forel-karelia/4.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-forel-karelia" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-forel-karelia" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Форель свежемороженая</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Карелия Пищевая ценность на 100 г.: белки 20.8 г., жиры 6.6 г. Энергетическая ценность: 148 ккал. Хранить при температуре - 18'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="forel-karelia" data-id="forel-karelia-2.5" data-price="0" data-lot="2.5" class="card-lot">2.5 кг</span>
+                    <span data-group-id="forel-karelia" data-id="forel-karelia-10" data-price="0" data-lot="10" class="card-lot">10 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="forel-karelia" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="forel-karelia" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="forel-karelia" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="forel-karelia" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="forel-karelia" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="forel-karelia" data-title="Форель свежемороженая" data-img="img/catalog/forel-karelia/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-chir" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+                    <li data-target="#carousel-group-chir" data-slide-to="1"></li>
+                    <li data-target="#carousel-group-chir" data-slide-to="2"></li>
+                  </ol>
+        <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+            <a href="img/catalog/chir/1.jpg" data-toggle="lightbox" data-gallery="group-chir">
+              <img class="d-block img-fluid" src="img/catalog/chir/1.jpg">
+            </a>
+          </div>
+                    <div class="carousel-item ">
+            <a href="img/catalog/chir/2.jpg" data-toggle="lightbox" data-gallery="group-chir">
+              <img class="d-block img-fluid" src="img/catalog/chir/2.jpg">
+            </a>
+          </div>
+                  </div>
+        <a class="carousel-control-prev" href="#carousel-group-chir" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-chir" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Чир свежемороженый</h3>
+      <p class="card-text text-left">
+        Место вылова: Республика Саха Якутия Пищевая ценность на 100 г.: Энергетическая ценность: 88 ккал. белки 17.5 г., жиры 2 г., Хранить при температуре - 18'С. Срок годности 12 месяцев.
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+                    <span data-group-id="chir" data-id="chir-1.5" data-price="0" data-lot="1.5" class="card-lot">1.5 кг</span>
+                    <span data-group-id="chir" data-id="chir-10" data-price="0" data-lot="10" class="card-lot">10 кг</span>
+                  </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="chir" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="chir" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="chir" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="chir" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="chir" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="chir" data-title="Чир свежемороженый" data-img="img/catalog/chir/1.jpg">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                  <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card">
-                        <div class="hover-image">
-                          <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                              <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                              <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                              <div class="carousel-item active">
-                                <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                  <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                                </a>
-                              </div>
-                              <div class="carousel-item">
-                                <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                  <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                                </a>
-                              </div>
-                              <div class="carousel-item">
-                                <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                  <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                                </a>
-                              </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Следующая</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Предыдущая</span>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="card-body">
-                          <h3 class="card-title">Икра</h3>
-                          <p class="card-text text-left">
-                            Свежесоленая икра.
-                          </p>
-                        </div>
-                        <div class="container card-footer">
-                          <div class="row card-order text-left">
-                            <div class="col-6 p-0">
-                              <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                              <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                            </div>
-                            <div class="col-6 p-0">
-                              Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                            </div>
-                          </div>
-                          <div class="row card-order">
-                            <div class="col-1 p-0">
-                              <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                            </div>
-                            <div class="col-1 p-0">
-                              <span data-group-id="3" class="card-amount">0</span>
-                            </div>
-                            <div class="col-1 p-0">
-                              <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                            </div>
-                            <div class="col-6 p-0">
-                              <span data-group-id="3" class="card-total-price">0</span> руб
-                            </div>
-                            <div class="col-3 p-0">
-                              <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                          <div class="hover-image">
-                            <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                              <ol class="carousel-indicators">
-                                <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                                <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                  <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                    <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                                  </a>
-                                </div>
-                                <div class="carousel-item">
-                                  <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                    <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                                  </a>
-                                </div>
-                                <div class="carousel-item">
-                                  <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                    <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                                  </a>
-                                </div>
-                              </div>
-                              <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Следующая</span>
-                              </a>
-                              <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Предыдущая</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <h3 class="card-title">Икра</h3>
-                            <p class="card-text text-left">
-                              Свежесоленая икра.
-                            </p>
-                          </div>
-                          <div class="container card-footer">
-                            <div class="row card-order text-left">
-                              <div class="col-6 p-0">
-                                <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                                <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                              </div>
-                              <div class="col-6 p-0">
-                                Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                              </div>
-                            </div>
-                            <div class="row card-order">
-                              <div class="col-1 p-0">
-                                <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                              </div>
-                              <div class="col-1 p-0">
-                                <span data-group-id="3" class="card-amount">0</span>
-                              </div>
-                              <div class="col-1 p-0">
-                                <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                              </div>
-                              <div class="col-6 p-0">
-                                <span data-group-id="3" class="card-total-price">0</span> руб
-                              </div>
-                              <div class="col-3 p-0">
-                                <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-4 col-md-6 mb-4">
-                          <div class="card">
-                            <div class="hover-image">
-                              <div id="carousel-group-3" class="carousel slide" data-ride="carousel"  data-interval="false">
-                                <ol class="carousel-indicators">
-                                  <li data-target="#carousel-group-3" data-slide-to="0" class="active"></li>
-                                  <li data-target="#carousel-group-3" data-slide-to="1"></li>
-                                  <li data-target="#carousel-group-3" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner" role="listbox">
-                                  <div class="carousel-item active">
-                                    <a href="img/catalog/5.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                      <img class="d-block img-fluid" src="img/catalog/5.jpg">
-                                    </a>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <a href="img/catalog/6.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                      <img class="d-block img-fluid" src="img/catalog/6.jpg">
-                                    </a>
-                                  </div>
-                                  <div class="carousel-item">
-                                    <a href="img/catalog/7.jpg" data-toggle="lightbox" data-gallery="group-3">
-                                      <img class="d-block img-fluid" src="img/catalog/7.jpg">
-                                    </a>
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carousel-group-3" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Следующая</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carousel-group-3" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="sr-only">Предыдущая</span>
-                                </a>
-                              </div>
-                            </div>
-                            <div class="card-body">
-                              <h3 class="card-title">Икра</h3>
-                              <p class="card-text text-left">
-                                Свежесоленая икра.
-                              </p>
-                            </div>
-                            <div class="container card-footer">
-                              <div class="row card-order text-left">
-                                <div class="col-6 p-0">
-                                  <span data-group-id="3" data-id="7" data-price="11190" data-lot="0.5" class="card-lot">0.5 кг</span>
-                                  <span data-group-id="3" data-id="8" data-price="4020" data-lot="2" class="card-lot">2 кг</span>
-                                </div>
-                                <div class="col-6 p-0">
-                                  Цена за кг: <span data-group-id="3" class="card-lot-price highlight">0</span> руб
-                                </div>
-                              </div>
-                              <div class="row card-order">
-                                <div class="col-1 p-0">
-                                  <button data-group-id="3" class="btn btn-amount card-amount-del">&#8722;</button>
-                                </div>
-                                <div class="col-1 p-0">
-                                  <span data-group-id="3" class="card-amount">0</span>
-                                </div>
-                                <div class="col-1 p-0">
-                                  <button data-group-id="3" class="btn btn-amount card-amount-add">+</button>
-                                </div>
-                                <div class="col-6 p-0">
-                                  <span data-group-id="3" class="card-total-price">0</span> руб
-                                </div>
-                                <div class="col-3 p-0">
-                                  <button class="btn btn-frost btn-cart float-right" data-group-id="3" data-title="Икра" data-img="img/catalog/3.jpg">В корзину</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- delete meeeeeeeee -->
 
       </div>
       <!-- /.row -->

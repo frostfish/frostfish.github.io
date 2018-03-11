@@ -1,0 +1,65 @@
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card">
+    <div class="hover-image">
+      <div id="carousel-group-{{data.group}}" class="carousel slide" data-ride="carousel"  data-interval="false">
+        <ol class="carousel-indicators">
+          {% for img in data.images %}
+          <li data-target="#carousel-group-{{data.group}}" data-slide-to="{{loop.index}}"></li>
+          {% endfor %}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          {% for img in data.images %}
+          <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}">
+            <a href="img/catalog/{{data.group}}/{{img}}" data-toggle="lightbox" data-gallery="group-{{data.group}}">
+              <img class="d-block img-fluid" src="img/catalog/{{data.group}}/{{img}}">
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#carousel-group-{{data.group}}" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующая</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-group-{{data.group}}" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущая</span>
+        </a>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">{{data.title}}</h3>
+      <p class="card-text text-left">
+        {{data.description}}
+      </p>
+    </div>
+    <div class="container card-footer">
+      <div class="row card-order text-left">
+        <div class="col-6 p-0">
+          {% for lot in data.lots %}
+          <span data-group-id="{{data.group}}" data-id="{{data.group}}-{{lot.size}}" data-price="{{lot.price}}" data-lot="{{lot.size}}" class="card-lot">{{lot.size}} кг</span>
+          {% endfor %}
+        </div>
+        <div class="col-6 p-0">
+          Цена за кг: <span data-group-id="{{data.group}}" class="card-lot-price highlight">0</span> руб.
+        </div>
+      </div>
+      <div class="row card-order">
+        <div class="col-1 p-0">
+          <button data-group-id="{{data.group}}" class="btn btn-amount card-amount-del">&#8722;</button>
+        </div>
+        <div class="col-1 p-0">
+          <span data-group-id="{{data.group}}" class="card-amount">0</span>
+        </div>
+        <div class="col-1 p-0">
+          <button data-group-id="{{data.group}}" class="btn btn-amount card-amount-add">+</button>
+        </div>
+        <div class="col-6 p-0">
+          <span data-group-id="{{data.group}}" class="card-total-price">0</span> руб
+        </div>
+        <div class="col-3 p-0">
+          <button class="btn btn-frost btn-cart float-right" data-group-id="{{data.group}}" data-title="{{data.title}}" data-img="img/catalog/{{data.group}}/{{data.images[0]}}">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

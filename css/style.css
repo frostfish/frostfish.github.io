@@ -47,6 +47,10 @@ a {
   height: auto;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .highlight {
   color: #1172a7;
   font-weight: 800;
@@ -290,29 +294,17 @@ a {
   font-size: 3rem;
 }
 
-.how-we-work p::first-letter {
-  color: #1172a7;
-  font-weight: bold;
-  font-size: 3rem;
-  float: left;
-  margin-top: 1.5rem;
-  margin-left: -3rem;
-}
-
 .how-we-work {
-  color: white;
-  background-color: #1172a7;
-  height: 8rem;
-  padding: 1rem;
+  border-color: #1172a7;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 0.25rem;
 }
 
 .how-we-work:after {
-  content:"";
+  content:"»";
   position:absolute;
-  height:0;
-  width:0;
+  padding: 5%;
   left:100%;
-  top:0;
-  border:4rem solid transparent;
-  border-left: 4rem solid #1172a7;
+  top:15%;
 }
