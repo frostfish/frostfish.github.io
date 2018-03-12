@@ -29,7 +29,34 @@
     <div class="card-body">
       <h3 class="card-title">{{data.title}}</h3>
       <p class="card-text text-left">
-        {{data.description}}
+        <table class="table table-striped catalog">
+          <tbody>
+            <tr>
+              <td>Место вылова</td>
+              <td>{{data.description.place}}</td>
+            </tr>
+            <tr>
+              <td>Белки</td>
+              <td>{{data.description.protein}} г.</td>
+            </tr>
+            <tr>
+              <td>Жиры</td>
+              <td>{{data.description.fat}} г.</td>
+            </tr>
+            <tr>
+              <td>Энергетическая ценность</td>
+              <td>{{data.description.energy_value}} ккал</td>
+            </tr>
+            <tr>
+              <td>Температура хранения</td>
+              <td>{{data.description.storage_temperature}}&nbsp;&deg;С</td>
+            </tr>
+            <tr>
+              <td>Срок годности</td>
+              <td>{{data.description.shelf_life}}</td>
+            </tr>
+          </tbody>
+        </table>
       </p>
     </div>
     <div class="container card-footer">

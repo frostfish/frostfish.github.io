@@ -80,10 +80,6 @@ a {
   width: 12rem;
 }
 
-.catalog {
-  margin-top: 12rem;
-}
-
 @media (min-width: 979px) {
   .dropdown:hover > .dropdown-menu {
     display: block;
@@ -307,4 +303,10 @@ a {
   padding: 5%;
   left:100%;
   top:15%;
+}
+
+.catalog td {
+  padding: 0;
+  font-size: 1rem;
+  text-align: left;
 }
