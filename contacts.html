@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   </head>
 
-  <body class="contacts-bg">
+  <body>
   	<!-- Header -->
     <div class="container-fluid text-center white-bg">
       <div class="row vertical-align">
@@ -99,27 +99,26 @@
       </div>
     </nav>
 
-    <div class="container mt-4 white-bg-7 rounded">
-      <div class="row mb-4 mt-2">
-        <div class="col-lg-7 col-md-12 mb-2">
-          <h2>Контакты</h2>
-
-          <div class="mt-3 mb-3">
-            <h3>Отдел продаж</h3>
-            <img class="float-left m-2" src="img/portrait.jpg" alt="">
-            <p class="mt-2">
-              Максим Кодоркин <br/>
-              Почта: prodam@gkfrost.ru<br/>
-              Телефон: 8 (968) 761-61-32
-            </p>
-            <img class="float-left m-2" src="img/portrait.jpg" alt="">
-            <p class="mt-2">
-              Андрей Шматов <br/>
-              Почта: zakaz@gkfrost.ru<br/>
-              Телефон: 8 (919) 722-90-55
-            </p>
-          </div>
-          <h3>Отдел закупок</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 hover-image">
+          <img class="img-fluid rounded" src="img/contacts.jpg"/>
+        </div>
+        <div class="col-lg-6 col-md-12 pl-4">
+          <h2>Отдел продаж</h2>
+          <img class="float-left m-2" src="img/portrait.jpg" alt="">
+          <p class="mt-2">
+            Максим Кодоркин <br/>
+            Почта: prodam@gkfrost.ru<br/>
+            Телефон: 8 (968) 761-61-32
+          </p>
+          <img class="float-left m-2" src="img/portrait.jpg" alt="">
+          <p class="mt-2">
+            Андрей Шматов <br/>
+            Почта: zakaz@gkfrost.ru<br/>
+            Телефон: 8 (919) 722-90-55
+          </p>
+          <h2>Отдел закупок</h2>
           <div class="mt-3 mb-3">
             <img class="float-left m-2" src="img/portrait.jpg" alt="">
             <p class="m-0">
@@ -128,6 +127,26 @@
               Телефон: 8 (906) 754-61-01
             </p>
           </div>
+          <div class="bd-callout bd-callout-info">
+            <h3>Форма заявки</h3>
+            <form class="pl-2 pr-2" method="post" action='http://178.62.214.238/post-request'>
+              <div class="form-group row">
+                <div class="col-12">
+                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <textarea class="form-control" name="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
+                </div>
+              </div>
+              <div class="form-group row m-0">
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-frost">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
 
           <h2>Склад</h2>
           <p>
@@ -135,52 +154,22 @@
             Время работы: понедельник-пятница 9:00-19:00, суббота и воскресенье – выходной.
           </p>
         </div>
-
-        <div class="col-lg-5 col-md-12">
-          <div class="bd-callout bd-callout-info">
-            <h4>Форма заявки</h4>
-            <form class="pl-2 pr-2" method="post" action='http://178.62.214.238/post-request'>
-              <div class="form-group row">
-                <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
-                <div class="col-lg-9 col-md-9">
-                  <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-lg-12 col-md-12">
-                  <textarea class="form-control" name="comment" rows="2" placeholder="Напишите здесь любой комментарий, вопрос или пожелание, например: «нужен прайслист»"></textarea>
-                </div>
-              </div>
-              <div class="form-group row p-0">
-                <div class="col-lg-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-frost">Отправить</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
       <!-- /.row -->
-      <div class="row mt-2 mb-2">
-        <div class="col-lg-12 col-md-12">
-          <h2>Схема проезда</h2>
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="map mb-2 mt-2">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e4cc6c575d49c710cbd1314c5a9b2e8fb223e34fbe11c8e007337b0d8a9a6a3&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
         </div>
       </div>
     </div>
     <!-- /.container -->
 
-    <div class="container-fluid p-1">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e4cc6c575d49c710cbd1314c5a9b2e8fb223e34fbe11c8e007337b0d8a9a6a3&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="footer-frost p-2 ">
+    <footer class="footer-frost p-2">
       <div class="container">
-        <p class="m-0 text-center">Группа компаний «FROST FISH»</p>
+        <p class="text-center m-0">Группа компаний «FROST FISH»</p>
       </div>
       <!-- /.container -->
     </footer>
