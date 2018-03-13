@@ -23,6 +23,15 @@ h1, h2, h3 {
   z-index:-100;
 }
 
+.contacts-bg {
+  background: url('http://frostfish.github.io/img/contacts_bg.jpg');
+  background-color: #edd29d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index:-100;
+}
+
 .white-bg-7 {
   background: rgba(255,255,255,0.7);
 }
@@ -309,4 +318,8 @@ a {
   padding: 0;
   font-size: 1rem;
   text-align: left;
+}
+
+.card-title {
+  min-height: 4.5rem;
 }
