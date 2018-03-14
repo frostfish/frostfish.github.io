@@ -318,17 +318,12 @@ a {
 
 .how-we-work {
   border-color: #1172a7;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-radius: 0.25rem;
-}
-
-.how-we-work:after {
-  content:"»";
-  position:absolute;
-  padding: 5%;
-  left:100%;
-  top:15%;
+  width:30%;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .catalog td {
@@ -344,4 +339,9 @@ a {
 .map {
   width: 100%;
   height: 600px;
+}
+
+.how-we-work .number {
+  font-size: 4rem;
+  color: #1172a7;
 }
