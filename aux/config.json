@@ -1,55 +1,27 @@
 [
 {
-  "title": "Икра кижуча",
+  "title": "Кета свежемороженая ПСГ",
   "description": {
-    "place": "Камчатка",
-    "protein": 31,
-    "fat": 13,
-    "energy_value": 249,
-    "storage_temperature": "от -4 до -6",
+    "text": "Размерный ряд 2-4 кг.",
+    "place": "г. Магадан",
+    "protein": 19.6,
+    "fat": 5.2,
+    "energy_value": 132,
+    "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
-  },
-  "group": "ikra-kizhuch",
-  "images": ["1.jpg"],
-  "lots": [
-    {"price": 4300, "size": 0.5},
-    {"price": 4400, "size": 0.25}
-  ]
-},
-{
-  "title": "Икра кеты",
-  "description": {
-    "place": "Чукотка",
-    "protein": 31.5,
-    "fat": 13.2,
-    "energy_value": 249,
-    "storage_temperature": "от -4 до -6",
-    "shelf_life": "12 месяцев"
-  },
-  "group": "ikra-keta",
-  "images": ["1.jpg"],
-  "lots": [
-    {"price": 3600, "size": 0.5},
-    {"price": 3700, "size": 0.25}
-  ]
-},
-{
-  "title": "Кета ПСГ",
-  "description": {
-    "place": "",
-    "protein": "",
-    "fat": "",
-    "energy_value": "",
-    "storage_temperature": "",
-    "shelf_life": ""
   },
   "group": "keta-psg",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": []
+  "packings": [
+    {"price": 361, "size": 2.5},
+    {"price": 305, "size": 10},
+    {"price": 293, "size": 20}
+  ]
 },
 {
-  "title": "Кижуч свежемороженый",
+  "title": "Кижуч свежемороженый ПСГ",
   "description": {
+    "text": "Размерный ряд 3-4 кг.",
     "place": "г. Магадан",
     "protein": 21.6,
     "fat": 6,
@@ -59,49 +31,89 @@
   },
   "group": "kizhuch-psg",
   "images": ["1.jpg", "2.jpg"],
-  "lots": [
-    {"price": 0, "size": 3.5},
-    {"price": 0, "size": 20}
+  "packings": [
+    {"price": 499, "size": 3.5},
+    {"price": 425, "size": 10},
+    {"price": 382, "size": 20}
   ]
 },
 {
   "title": "Муксун свежемороженый",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 1.1-1.3 кг.",
+    "place": "Республика Саха",
     "protein": 18.5,
     "fat": 5.2,
     "energy_value": 121,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
-  "group": "muksun",
+  "group": "muksun-1p2",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": [
-    {"price": 0, "size": 1.3},
-    {"price": 0, "size": 10}
+  "packings": [
+    {"price": 653, "size": 1.2},
+    {"price": 559, "size": 10}
+  ]
+},
+{
+  "title": "Муксун свежемороженый",
+  "description": {
+    "text": "Размерный ряд 1.3-1.5 кг.",
+    "place": "Республика Саха",
+    "protein": 18.5,
+    "fat": 5.2,
+    "energy_value": 121,
+    "storage_temperature": "-18",
+    "shelf_life": "12 месяцев"
+  },
+  "group": "muksun-1p4",
+  "images": ["1.jpg", "2.jpg", "3.jpg"],
+  "packings": [
+    {"price": 706, "size": 1.4},
+    {"price": 580, "size": 10}
   ]
 },
 {
   "title": "Нельма свежемороженая",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 2-3 кг.",
+    "place": "Республика Саха",
     "protein": 19.4,
     "fat": 9.2,
     "energy_value": 160,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
-  "group": "nelma",
+  "group": "nelma-2",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": [
-    {"price": 0, "size": 2.5},
-    {"price": 0, "size": 11}
+  "packings": [
+    {"price": 1064, "size": 2.5},
+    {"price": 916, "size": 12}
   ]
 },
 {
-  "title": "Омуль свежемороженый ",
+  "title": "Нельма свежемороженая",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 3-4 кг.",
+    "place": "Республика Саха",
+    "protein": 19.4,
+    "fat": 9.2,
+    "energy_value": 160,
+    "storage_temperature": "-18",
+    "shelf_life": "12 месяцев"
+  },
+  "group": "nelma-3",
+  "images": ["1.jpg", "2.jpg", "3.jpg"],
+  "packings": [
+    {"price": 1106, "size": 3.5},
+    {"price": 953, "size": 12}
+  ]
+},
+{
+  "title": "Омуль свежемороженый",
+  "description": {
+    "text": "Размерный ряд 1+ кг.",
+    "place": "Республика Саха",
     "protein": 19.2,
     "fat": 8.3,
     "energy_value": 152,
@@ -110,14 +122,16 @@
   },
   "group": "omul",
   "images": ["1.jpg"],
-  "lots": [
-    {"price": 0, "size": 1.3}
+  "packings": [
+    {"price": 581, "size": 1},
+    {"price": 496, "size": 10}
   ]
 },
 {
   "title": "Ряпушка свежемороженая",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 0.2-0.3 кг.",
+    "place": "Республика Саха",
     "protein": 17.5,
     "fat": 2,
     "energy_value": 88,
@@ -126,14 +140,16 @@
   },
   "group": "ryapushka",
   "images": ["1.jpg", "2.jpg"],
-  "lots": [
-    {"price": 0, "size": 0.3}
+  "packings": [
+    {"price": 237, "size": 0.2},
+    {"price": 197, "size": 10}
   ]
 },
 {
   "title": "Сиг свежемороженый",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 0.7-1.0 кг.",
+    "place": "Республика Саха",
     "protein": 17.5,
     "fat": 2,
     "energy_value": 88,
@@ -142,13 +158,15 @@
   },
   "group": "sig",
   "images": ["1.jpg", "2.jpg"],
-  "lots": [
-    {"price": 0, "size": 0.8}
+  "packings": [
+    {"price": 453, "size": 0.8},
+    {"price": 385, "size": 10}
   ]
 },
 {
   "title": "Стейк семги свежемороженый",
   "description": {
+    "text": "Размерный ряд 0.3-0.5 кг.",
     "place": "Страна Чили",
     "protein": 20,
     "fat": 8.1,
@@ -158,7 +176,7 @@
   },
   "group": "steik-semga",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": [
+  "packings": [
     {"price": 0, "size": 0.4},
     {"price": 0, "size": 10}
   ]
@@ -166,7 +184,8 @@
 {
   "title": "Треска потрошенная без головы свежемороженая",
   "description": {
-    "place": "г. Мурманск (Баренцево море)",
+    "text": "Размерный ряд 1-2 кг.",
+    "place": "г. Мурманск",
     "protein": 16,
     "fat": 0.6,
     "energy_value": 69,
@@ -175,15 +194,16 @@
   },
   "group": "treska-psg",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": [
-    {"price": 0, "size": 1.5},
-    {"price": 0, "size": 10}
+  "packings": [
+    {"price": 284, "size": 1.5},
+    {"price": 238, "size": 10}
   ]
 },
 {
   "title": "Треска филе без кожи",
   "description": {
-    "place": "г. Мурманск (Баренцево море)",
+    "text": "Блочной заморозки (выраб. в море)",
+    "place": "г. Мурманск",
     "protein": 16,
     "fat": 0.6,
     "energy_value": 69,
@@ -192,15 +212,16 @@
   },
   "group": "file-treska-bez-kozhi",
   "images": ["1.jpg", "2.jpg", "3.jpg"],
-  "lots": [
-    {"price": 0, "size": 0.7},
-    {"price": 0, "size": 6.81}
+  "packings": [
+    {"price": 541, "size": 6.81},
+    {"price": 479, "size": 20.43}
   ]
 },
 {
   "title": "Треска филе на коже",
   "description": {
-    "place": "г. Мурманск (Баренцево море)",
+    "text": "Блочной заморозки (выраб. в море)",
+    "place": "г. Мурманск",
     "protein": 16,
     "fat": 0.6,
     "energy_value": 69,
@@ -209,14 +230,33 @@
   },
   "group": "file-treska-na-kozhe",
   "images": ["1.jpg", "2.jpg"],
-  "lots": [
-    {"price": 0, "size": 0.7},
-    {"price": 0, "size": 6.81}
+  "packings": [
+    {"price": 510, "size": 6.81},
+    {"price": 451, "size": 20.43}
+  ]
+},
+{
+  "title": "Треска филе на коже IQF",
+  "description": {
+    "text": "Размерный ряд 0.3-0.6 кг.",
+    "place": "г. Мурманск",
+    "protein": 16,
+    "fat": 0.6,
+    "energy_value": 69,
+    "storage_temperature": "-18",
+    "shelf_life": "24 месяцев"
+  },
+  "group": "file-treska-na-kozhe-iqf",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 412, "size": 0.3},
+    {"price": 349, "size": 10.5}
   ]
 },
 {
   "title": "Форель свежемороженая",
   "description": {
+    "text": "Размерный ряд 1.8-2.7 кг.",
     "place": "Республика Карелия",
     "protein": 20.8,
     "fat": 6.6,
@@ -226,7 +266,7 @@
   },
   "group": "forel-karelia",
   "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
-  "lots": [
+  "packings": [
     {"price": 0, "size": 2.5},
     {"price": 0, "size": 10}
   ]
@@ -234,7 +274,8 @@
 {
   "title": "Чир свежемороженый",
   "description": {
-    "place": "Республика Саха, Якутия",
+    "text": "Размерный ряд 1-2 кг.",
+    "place": "Республика Саха",
     "protein": 17.5,
     "fat": 2,
     "energy_value": 88,
@@ -243,9 +284,47 @@
   },
   "group": "chir",
   "images": ["1.jpg", "2.jpg"],
-  "lots": [
-    {"price": 0, "size": 1.5},
-    {"price": 0, "size": 10}
+  "packings": [
+    {"price": 608, "size": 1.5},
+    {"price": 520, "size": 10}
+  ]
+},
+{
+  "title": "Икра кижуча",
+  "description": {
+    "text": "Пластиковая банка по 250 или 500 г.",
+    "place": "Камчатка",
+    "protein": 31,
+    "fat": 13,
+    "energy_value": 249,
+    "storage_temperature": "от -4 до -6",
+    "shelf_life": "12 месяцев"
+  },
+  "group": "ikra-kizhuch",
+  "images": ["1.jpg"],
+  "packings": [
+    {"price": 4380, "size": 0.25},
+    {"price": 4380, "size": 0.5},
+    {"price": 3970, "size": 2}
+  ]
+},
+{
+  "title": "Икра кеты",
+  "description": {
+    "text": "Пластиковая банка по 250 или 500 г.",
+    "place": "Чукотка",
+    "protein": 31.5,
+    "fat": 13.2,
+    "energy_value": 249,
+    "storage_temperature": "от -4 до -6",
+    "shelf_life": "12 месяцев"
+  },
+  "group": "ikra-keta",
+  "images": ["1.jpg"],
+  "packings": [
+    {"price": 3970, "size": 0.25},
+    {"price": 3970, "size": 0.5},
+    {"price": 3600, "size": 2}
   ]
 }
 ]

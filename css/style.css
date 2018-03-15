@@ -345,3 +345,9 @@ a {
   font-size: 4rem;
   color: #1172a7;
 }
+
+.contacts-photo {
+  height: 80px;
+  float: left;
+  margin: 0.5rem;
+}

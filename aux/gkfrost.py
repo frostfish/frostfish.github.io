@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-
-## Usage: gunicorn gkfrost:app -b 0.0.0.0:5000 -D
+# Sample run: gunicorn gkfrost:app -b 0.0.0.0:5000 -D
 
 from flask import Flask, request, jsonify
 from werkzeug.contrib.fixers import ProxyFix
@@ -19,7 +18,7 @@ ZAKAZ_MAIL = 'zakaz@gkfrost.ru'
 
 def send_mail(toaddr, subject, html):
     fromaddr = 'noreply@gkfrost.ru'
-    password = 'RTsr6zqoueS8wGywJqFz'
+    password = '<password>'
 
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
@@ -58,10 +57,10 @@ def post_order():
 
     total_price = 0
 
-    for key in sorted(order_data['orderlist']):
+    for i, key in enumerate(sorted(order_data['orderlist'])):
         pos = order_data['orderlist'][key]
-        html += '<tr>'
-        html += '<td>{id}</td><td>{title}</td><td>{count}</td>\n'.format(**pos)
+        html += '<tr><td>{}</td>'.format(i+1)
+        html += '<td>{title}</td><td>{count}</td>\n'.format(**pos)
         html += '</tr>'
         total_price += pos['count'] * pos['price']
 

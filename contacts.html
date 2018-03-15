@@ -13,6 +13,7 @@
     <link href="css/phone.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
   </head>
 
   <body>
@@ -49,7 +50,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form method="post" action='http://178.62.214.238/post-request'>
+            <form method="post" action='http://api.gkfrost.ru/post-request'>
               <div class="form-group row">
                 <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
                 <div class="col-lg-9 col-md-9">
@@ -103,13 +104,17 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 pl-4">
           <h2>Отдел продаж</h2>
-          <img class="float-left m-2" src="img/contacts/kodorkin.jpg" alt="">
+          <a href="img/contacts/kodorkin.jpg" data-toggle="lightbox">
+            <img class="contacts-photo" src="img/contacts/kodorkin.jpg" alt="">
+          </a>
           <p class="mt-2">
             <strong>Максим Кодоркин</strong> <br/>
             Почта: <a href="mailto:prodam@gkfrost.ru">prodam@gkfrost.ru</a><br/>
             Телефон: 8 (968) 761-61-32
           </p>
-          <img class="float-left m-2" src="img/contacts/shmatov.jpg" alt="">
+          <a href="img/contacts/shmatov.jpg" data-toggle="lightbox">
+            <img class="contacts-photo" src="img/contacts/shmatov.jpg" alt="">
+          </a>
           <p class="mt-2">
             <strong>Андрей Шматов</strong> <br/>
             Почта: <a href="mailto:zakaz@gkfrost.ru">zakaz@gkfrost.ru</a><br/>
@@ -117,7 +122,9 @@
           </p>
           <h2>Отдел закупок</h2>
           <div class="mt-3 mb-3">
-            <img class="float-left m-2" src="img/contacts/kobin.jpg" alt="">
+            <a href="img/contacts/kobin.jpg" data-toggle="lightbox">
+              <img class="contacts-photo" src="img/contacts/kobin.jpg" alt="">
+            </a>
             <p class="m-0">
               <strong>Антон Кобин</strong> <br/>
               Почта: <a href="mailto:zakupki@gkfrost.ru">zakupki@gkfrost.ru</a><br/>
@@ -126,7 +133,7 @@
           </div>
           <div class="bd-callout bd-callout-info">
             <h3>Форма заявки</h3>
-            <form class="pl-2 pr-2" method="post" action='http://178.62.214.238/post-request'>
+            <form class="pl-2 pr-2" method="post" action='http://api.gkfrost.ru/post-request'>
               <div class="form-group row">
                 <div class="col-12">
                   <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
@@ -145,7 +152,7 @@
             </form>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 hover-image">
+        <div class="col-lg-6 col-md-12">
           <img class="img-fluid rounded" src="img/contacts/contacts.jpg"/>
         </div>
         <div class="col-12">
@@ -179,6 +186,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jqcart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox({alwaysShowClose: true});
+      });
+    </script>
 
   </body>
 

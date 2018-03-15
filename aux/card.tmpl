@@ -29,6 +29,7 @@
     <div class="card-body">
       <h3 class="card-title">{{data.title}}</h3>
       <p class="card-text text-left">
+        <span>{{data.description.text}}</span>>
         <table class="table table-striped catalog">
           <tbody>
             <tr>
@@ -62,7 +63,7 @@
     <div class="container card-footer">
       <div class="row card-order text-left">
         <div class="col-6 p-0">
-          {% for lot in data.lots %}
+          {% for lot in data.packings %}
           <span data-group-id="{{data.group}}" data-id="{{data.group}}-{{lot.size}}" data-price="{{lot.price}}" data-lot="{{lot.size}}" class="card-lot">{{lot.size}} кг</span>
           {% endfor %}
         </div>

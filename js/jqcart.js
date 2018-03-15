@@ -321,7 +321,7 @@ $(function(){
   // инициализация плагина
   $.jqCart({
       buttons: '.btn-cart',
-      handler: 'http://178.62.214.238/post-order',
+      handler: 'http://api.gkfrost.ru/post-order',
       cartLabel: '.jqcart-cart-label',
       visibleLabel: true,
       openByAdding: false,
@@ -355,7 +355,7 @@ $(function(){
 
     GetElementForId('.card-lot-price', groupId).innerHTML = selectedLot.dataset['price'];
     GetElementForId('.card-amount', groupId).innerHTML = 1;
-    GetElementForId('.card-total-price', groupId).innerHTML = selectedLot.dataset['price'] * selectedLot.dataset['lot'];
+    GetElementForId('.card-total-price', groupId).innerHTML = (selectedLot.dataset['price'] * selectedLot.dataset['lot']).toFixed(2);
   });
 
   $('.card-amount-add').click(function(o) {
@@ -367,7 +367,7 @@ $(function(){
     var amountLabel = GetElementForId('.card-amount', groupId);
     amountLabel.innerHTML = Math.max(parseFloat(amountLabel.innerHTML)+1, 0);
 
-    GetElementForId('.card-total-price', groupId).innerHTML = amountLabel.innerHTML * price * lot;
+    GetElementForId('.card-total-price', groupId).innerHTML = (amountLabel.innerHTML * price * lot).toFixed(2);
     $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
   });
 
@@ -380,7 +380,7 @@ $(function(){
     var amountLabel = GetElementForId('.card-amount', groupId);
     amountLabel.innerHTML = Math.max(parseFloat(amountLabel.innerHTML)-1, 0);
 
-    GetElementForId('.card-total-price', groupId).innerHTML = amountLabel.innerHTML * price * lot;
+    GetElementForId('.card-total-price', groupId).innerHTML = (amountLabel.innerHTML * price * lot).toFixed(2);
     $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
   });
  
