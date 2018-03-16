@@ -154,17 +154,19 @@
     },
     recalcSum: function() {
       var subtotal = 0,
-        amount,
+        amount = 0,
         sum = 0,
         totalCnt = 0;
       $('.jqcart-tr').each(function() {
         amount = +$('.jqcart-amount', this).val();
-        sum = Math.ceil((amount * $('.jqcart-price', this).text()) * 100) / 100;
-        $('.jqcart-sum', this).html(sum + ' ' + opts.currency);
+        sum = amount * cartData[$(this).data().id].price;
+
+        $('.jqcart-sum', this).html(sum.toLocaleString('ru') + ' ' + opts.currency);
 				subtotal = Math.ceil((subtotal + sum) * 100) / 100;
         totalCnt += amount;
       });
-      $('.jqcart-subtotal strong').text(subtotal);
+      
+      $('.jqcart-subtotal strong').text(subtotal.toLocaleString('ru'));
       $('.jqcart-total-cnt').text(totalCnt);
       if (totalCnt <= 0) {
 				actions.hideCart();
