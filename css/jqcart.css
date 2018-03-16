@@ -14,6 +14,10 @@
     z-index: 100;
 }
 
+.jqcart-cart-label:hover {
+    background-color: #ccc;
+}
+
 .jqcart-cart-fixed {
     position: fixed;
     bottom: 4rem;
