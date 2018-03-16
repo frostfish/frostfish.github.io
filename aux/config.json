@@ -2,11 +2,8 @@
 {
   "title": "Кета свежемороженая ПСГ",
   "description": {
-    "text": "Размерный ряд 2-4 кг.",
     "place": "г. Магадан",
-    "protein": 19.6,
-    "fat": 5.2,
-    "energy_value": 132,
+    "size": "pазмерный ряд 2-4 кг.",
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -21,11 +18,8 @@
 {
   "title": "Кижуч свежемороженый ПСГ",
   "description": {
-    "text": "Размерный ряд 3-4 кг.",
+    "size": "размерный ряд 3-4 кг.",
     "place": "г. Магадан",
-    "protein": 21.6,
-    "fat": 6,
-    "energy_value": 140,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -40,11 +34,8 @@
 {
   "title": "Муксун свежемороженый",
   "description": {
-    "text": "Размерный ряд 1.1-1.3 кг.",
+    "size": "размерный ряд 1.1-1.3 кг.",
     "place": "Республика Саха",
-    "protein": 18.5,
-    "fat": 5.2,
-    "energy_value": 121,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -58,11 +49,8 @@
 {
   "title": "Муксун свежемороженый",
   "description": {
-    "text": "Размерный ряд 1.3-1.5 кг.",
+    "size": "размерный ряд 1.3-1.5 кг.",
     "place": "Республика Саха",
-    "protein": 18.5,
-    "fat": 5.2,
-    "energy_value": 121,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -76,11 +64,8 @@
 {
   "title": "Нельма свежемороженая",
   "description": {
-    "text": "Размерный ряд 2-3 кг.",
+    "size": "размерный ряд 2-3 кг.",
     "place": "Республика Саха",
-    "protein": 19.4,
-    "fat": 9.2,
-    "energy_value": 160,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -94,11 +79,8 @@
 {
   "title": "Нельма свежемороженая",
   "description": {
-    "text": "Размерный ряд 3-4 кг.",
+    "size": "размерный ряд 3-4 кг.",
     "place": "Республика Саха",
-    "protein": 19.4,
-    "fat": 9.2,
-    "energy_value": 160,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -112,11 +94,8 @@
 {
   "title": "Омуль свежемороженый",
   "description": {
-    "text": "Размерный ряд 1+ кг.",
+    "size": "размерный ряд 1+ кг.",
     "place": "Республика Саха",
-    "protein": 19.2,
-    "fat": 8.3,
-    "energy_value": 152,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -130,11 +109,8 @@
 {
   "title": "Ряпушка свежемороженая",
   "description": {
-    "text": "Размерный ряд 0.2-0.3 кг.",
+    "size": "размерный ряд 0.2-0.3 кг.",
     "place": "Республика Саха",
-    "protein": 17.5,
-    "fat": 2,
-    "energy_value": 88,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -148,11 +124,8 @@
 {
   "title": "Сиг свежемороженый",
   "description": {
-    "text": "Размерный ряд 0.7-1.0 кг.",
+    "size": "размерный ряд 0.7-1.0 кг.",
     "place": "Республика Саха",
-    "protein": 17.5,
-    "fat": 2,
-    "energy_value": 88,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -166,11 +139,8 @@
 {
   "title": "Стейк семги свежемороженый",
   "description": {
-    "text": "Размерный ряд 0.3-0.5 кг.",
+    "size": "размерный ряд 0.3-0.5 кг.",
     "place": "Страна Чили",
-    "protein": 20,
-    "fat": 8.1,
-    "energy_value": 153,
     "storage_temperature": "-18",
     "shelf_life": "18 месяцев"
   },
@@ -182,13 +152,10 @@
   ]
 },
 {
-  "title": "Треска потрошенная без головы свежемороженая",
+  "title": "Треска б/г свежемороженая",
   "description": {
-    "text": "Размерный ряд 1-2 кг.",
+    "size": "размерный ряд 1-2 кг.",
     "place": "г. Мурманск",
-    "protein": 16,
-    "fat": 0.6,
-    "energy_value": 69,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -202,11 +169,8 @@
 {
   "title": "Треска филе без кожи",
   "description": {
-    "text": "Блочной заморозки (выраб. в море)",
+    "size": "Блочной заморозки (выраб. в море)",
     "place": "г. Мурманск",
-    "protein": 16,
-    "fat": 0.6,
-    "energy_value": 69,
     "storage_temperature": "-18",
     "shelf_life": "24 месяцев"
   },
@@ -220,11 +184,8 @@
 {
   "title": "Треска филе на коже",
   "description": {
-    "text": "Блочной заморозки (выраб. в море)",
+    "size": "Блочной заморозки (выраб. в море)",
     "place": "г. Мурманск",
-    "protein": 16,
-    "fat": 0.6,
-    "energy_value": 69,
     "storage_temperature": "-18",
     "shelf_life": "24 месяцев"
   },
@@ -238,11 +199,8 @@
 {
   "title": "Треска филе на коже IQF",
   "description": {
-    "text": "Размерный ряд 0.3-0.6 кг.",
+    "size": "размерный ряд 0.3-0.6 кг.",
     "place": "г. Мурманск",
-    "protein": 16,
-    "fat": 0.6,
-    "energy_value": 69,
     "storage_temperature": "-18",
     "shelf_life": "24 месяцев"
   },
@@ -256,11 +214,8 @@
 {
   "title": "Форель свежемороженая",
   "description": {
-    "text": "Размерный ряд 1.8-2.7 кг.",
+    "size": "размерный ряд 1.8-2.7 кг.",
     "place": "Республика Карелия",
-    "protein": 20.8,
-    "fat": 6.6,
-    "energy_value": 148,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -274,11 +229,8 @@
 {
   "title": "Чир свежемороженый",
   "description": {
-    "text": "Размерный ряд 1-2 кг.",
+    "size": "размерный ряд 1-2 кг.",
     "place": "Республика Саха",
-    "protein": 17.5,
-    "fat": 2,
-    "energy_value": 88,
     "storage_temperature": "-18",
     "shelf_life": "12 месяцев"
   },
@@ -292,11 +244,8 @@
 {
   "title": "Икра кижуча",
   "description": {
-    "text": "Пластиковая банка по 250 или 500 г.",
+    "size": "пласт., 250 или 500 г.",
     "place": "Камчатка",
-    "protein": 31,
-    "fat": 13,
-    "energy_value": 249,
     "storage_temperature": "от -4 до -6",
     "shelf_life": "12 месяцев"
   },
@@ -311,11 +260,8 @@
 {
   "title": "Икра кеты",
   "description": {
-    "text": "Пластиковая банка по 250 или 500 г.",
+    "size": "пласт., 250 или 500 г.",
     "place": "Чукотка",
-    "protein": 31.5,
-    "fat": 13.2,
-    "energy_value": 249,
     "storage_temperature": "от -4 до -6",
     "shelf_life": "12 месяцев"
   },

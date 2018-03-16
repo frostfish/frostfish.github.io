@@ -83,6 +83,10 @@ a {
   font-weight: 800;
 }
 
+.card-body {
+  padding: 0;
+}
+
 .card-body .highlight {
   color: #1172a7;
   font-weight: 600;
@@ -94,13 +98,14 @@ a {
 }
 
 .navbar-frost {
-  padding:0;
+  padding: 0;
   color: #FFFFFF;
   background-color: #1172a7;
+  text-transform: uppercase;
 }
 
 .dropdown-menu {
-  background-color: #1172a7;
+  background-color: #3E9BD0;
   border: none;
   border-radius: 0;
   margin: 0;
@@ -118,10 +123,11 @@ a {
   color: #FFFFFF;
   text-decoration: none;
   padding: 0.3rem;
+  text-transform: none;
 }
 
 .dropdown-item:hover {
-  background-color: #00aef7;
+  background-color: #19b6ee;
   color: white;
 }
 
@@ -138,23 +144,47 @@ a {
 }
 
 .navbar-frost .active {
-  background-color: #00aef7;
+  background-color: #3E9BD0;
 }
 
-.navbar-frost .navbar-nav .nav-link {
-  width: 12rem;
+.navbar-frost-secondary {
+  padding:0;
+  color: #FFFFFF;
+  background-color: #3E9BD0;
 }
 
-.navbar-nav > li > a {
+.navbar-frost-secondary .active {
+  background-color: #19b6ee;
+}
+
+.navbar-frost-secondary .navbar-nav > li:hover, .nav > li:focus {
+  background-color: #19b6ee;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-frost .navbar-nav .nav-link {
+    width: 12rem;
+  }
+}
+
+.navbar-frost-secondary .navbar-nav > li > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+.navbar-frost .navbar-nav > li > a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 800;
-  text-transform: uppercase;
 }
 
 .navbar-nav > li:hover, .nav > li:focus {
-  background-color: #00aef7;
+  background-color: #3E9BD0;
   text-decoration: none;
 }
 
@@ -201,8 +231,7 @@ a {
 }
 
 .card-footer {
-  padding: 5px;
-  font-size: 1rem;
+  padding: 0;
 }
 
 .advantage-check {
@@ -299,13 +328,13 @@ a {
 }
 
 .card-order {
-  font-size: 1.2rem;
-  margin: 0.25rem 0 0 0;
+  font-size: 1.1rem;
+  margin: 5px;
   padding: 0;
 }
 
 .btn-amount {
-  padding: 0.25rem;
+  padding: 0.5rem;
   background-color: #aaaaaa;
   color: white;
   font-weight: 800;
@@ -326,14 +355,20 @@ a {
   padding: 1rem;
 }
 
-.catalog td {
-  padding: 0;
-  font-size: 1rem;
-  text-align: left;
+.card-title {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.card-title {
-  min-height: 4.5rem;
+.btn-cart {
+  line-height: 1rem;
+  font-weight: bold;
+}
+
+.catalog td {
+  padding: 0 1rem 0 1rem;
+  font-size: 0.9rem;
+  text-align: left;
 }
 
 .map {

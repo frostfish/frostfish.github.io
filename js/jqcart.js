@@ -316,7 +316,7 @@ function GetElementForId(className, id) {
   return matched;
 };
 
-$(function(){
+$(function() {
   'use strict';
   // инициализация плагина
   $.jqCart({
@@ -383,5 +383,8 @@ $(function(){
     GetElementForId('.card-total-price', groupId).innerHTML = (amountLabel.innerHTML * price * lot).toFixed(2);
     $(GetElementForId('.btn-cart', groupId)).attr('data-count', amountLabel.innerHTML);
   });
- 
+
+
+  // Switch on latest lot in every card
+  $.each($('.card-lot'), function(i) {$(this).click();});
 });
