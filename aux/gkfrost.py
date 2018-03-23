@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Sample run: gunicorn gkfrost:app -b 0.0.0.0:5000 -D
+# Sample run: gunicorn frost-fish:app -b 0.0.0.0:5000 -D
 
 from flask import Flask, request, jsonify
 from werkzeug.contrib.fixers import ProxyFix
@@ -14,10 +14,10 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-ZAKAZ_MAIL = 'zakaz@gkfrost.ru'
+ZAKAZ_MAIL = 'zakaz@frost-fish.ru'
 
 def send_mail(toaddr, subject, html):
-    fromaddr = 'noreply@gkfrost.ru'
+    fromaddr = 'noreply@frost-fish.ru'
     password = '<password>'
 
     msg = MIMEMultipart('alternative')
@@ -45,7 +45,7 @@ def post_order():
       <head></head>
       <body>
         <p>Здравствуйте!</p>
-        <p>Вами был оформлен заказ на сайте <a href="http://gkfrost.ru">gkfrost.ru</a>.</p>
+        <p>Вами был оформлен заказ на сайте <a href="http://frost-fish.ru">frost-fish.ru</a>.</p>
         <p>Телефон: {phone}</p>
         <p>Почта: {mail}</p>
         <p>Комментарий: {comment}</p>
@@ -80,7 +80,7 @@ def post_order():
     for mail in recipients:
         send_mail(
             mail,
-            'Новый заказ на сайте gkfrost.ru',
+            'Новый заказ на сайте frost-fish.ru',
             html
         )
 

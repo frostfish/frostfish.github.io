@@ -323,7 +323,7 @@ $(function() {
   // инициализация плагина
   $.jqCart({
       buttons: '.btn-cart',
-      handler: 'http://api.gkfrost.ru/post-order',
+      handler: 'http://api.frost-fish.ru/post-order',
       cartLabel: '.jqcart-cart-label',
       visibleLabel: true,
       openByAdding: false,
