@@ -396,10 +396,18 @@ $(function() {
       type: $(this).attr('method'),
       data: $(this).serialize(),
       success: function(html) {
-        $('#backCallModal').fadeOut('fast', function() {
-          $(this).remove();
-        });
-        alert('Заявка отправлена');
+        $('#backCallModal').modal('hide');
+      }
+    });
+    e.preventDefault();
+  });
+
+  $(document).on('submit', '.request', function(e) {
+    $.ajax({
+      url: $(this).attr('action'),
+      type: $(this).attr('method'),
+      data: $(this).serialize(),
+      success: function(html) {
       }
     });
     e.preventDefault();
