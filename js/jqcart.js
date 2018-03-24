@@ -389,4 +389,19 @@ $(function() {
 
   // Switch on latest lot in every card
   $.each($('.card-lot'), function(i) {$(this).click();});
+
+  $(document).on('submit', '.callback', function(e) {
+    $.ajax({
+      url: $(this).attr('action'),
+      type: $(this).attr('method'),
+      data: $(this).serialize(),
+      success: function(html) {
+        $('#backCallModal').fadeOut('fast', function() {
+          $(this).remove();
+        });
+        alert('Заявка отправлена');
+      }
+    });
+    e.preventDefault();
+  });
 });
