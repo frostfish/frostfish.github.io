@@ -5,7 +5,7 @@ import json
 
 # Capture our current directory
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-CATEGORY = 'cold-smoked-fish'
+CATEGORY = 'venison'
 
 def gen(config):
     j2_env = Environment(

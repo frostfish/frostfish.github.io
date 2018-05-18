@@ -82,7 +82,7 @@
     "storage_temperature": "от 0 до 4",
     "shelf_life": "40 суток"
   },
-  "group": "сarpaccio",
+  "group": "carpaccio",
   "images": ["1.jpg", "2.jpg"],
   "packings": [
     {"price": 1481, "size": 0.3},
