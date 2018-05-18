@@ -5,7 +5,7 @@ import json
 
 # Capture our current directory
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-
+CATEGORY = 'cold-smoked-fish'
 
 def gen(config):
     j2_env = Environment(
@@ -15,9 +15,9 @@ def gen(config):
     template = j2_env.get_template('card.tmpl')
 
     for data in config:
-        print(template.render(data=data))
+        print(template.render(data=data, img_folder=CATEGORY))
 
 if __name__ == '__main__':
-    with open('config.json') as fin:
+    with open(CATEGORY + '.json') as fin:
         config = json.load(fin)
         gen(config)

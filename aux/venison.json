@@ -1,0 +1,92 @@
+[
+{
+  "title": "Чипсы из оленины сыровяленые",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "100 г.",
+    "storage_temperature": "от 0 до 4",
+    "shelf_life": "3 месяца"
+  },
+  "group": "chips",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 2300, "size": 0.1},
+    {"price": 1940, "size": 1}
+  ]
+},
+{
+  "title": "Колбаски для жарки из лося",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "500 г.",
+    "storage_temperature": "-18",
+    "shelf_life": "6 месяцев"
+  },
+  "group": "kolbaski-los",
+  "images": ["1.jpg", "2.jpg", "3.jpg"],
+  "packings": [
+    {"price": 342, "size": 0.5},
+    {"price": 293, "size": 4}
+  ]
+},
+{
+  "title": "Колбаски для жарки из оленины",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "500 г.",
+    "storage_temperature": "-18",
+    "shelf_life": "6 месяцев"
+  },
+  "group": "kolbaski-olenina",
+  "images": ["1.jpg", "2.jpg", "3.jpg"],
+  "packings": [
+    {"price": 314, "size": 0.5},
+    {"price": 269, "size": 4}
+  ]
+},
+{
+  "title": "Окорок оленя (шницель)",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "4-5 кг.",
+    "storage_temperature": "-18",
+    "shelf_life": "6 месяцев"
+  },
+  "group": "okorok-olen",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 960, "size": 4},
+    {"price": 863, "size": 12}
+  ]
+},
+{
+  "title": "Строганина из оленины сыровяленая",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "60-120 г.",
+    "storage_temperature": "от 0 до 4",
+    "shelf_life": "120 суток"
+  },
+  "group": "stroganina",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 2535, "size": 0.08},
+    {"price": 2234, "size": 1}
+  ]
+},
+{
+  "title": "Карпаччо из оленины сырокопченое",
+  "description": {
+    "place": "ИП Богомольная И.В.",
+    "size": "0.2-0.4 кг.",
+    "storage_temperature": "от 0 до 4",
+    "shelf_life": "40 суток"
+  },
+  "group": "сarpaccio",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 1481, "size": 0.3},
+    {"price": 1301, "size": 2}
+  ]
+}
+]

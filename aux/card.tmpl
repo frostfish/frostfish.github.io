@@ -10,8 +10,8 @@
         <div class="carousel-inner" role="listbox">
           {% for img in data.images %}
           <div class="carousel-item {{ 'active' if loop.index == 1 else '' }}">
-            <a href="img/catalog/{{data.group}}/{{img}}" data-toggle="lightbox" data-gallery="group-{{data.group}}">
-              <img class="d-block img-fluid" src="img/catalog/{{data.group}}/{{img}}">
+            <a href="img/catalog/{{img_folder}}/{{data.group}}/{{img}}" data-toggle="lightbox" data-gallery="group-{{data.group}}">
+              <img class="d-block img-fluid" src="img/catalog/{{img_folder}}/{{data.group}}/{{img}}">
             </a>
           </div>
           {% endfor %}
@@ -32,7 +32,7 @@
         <table class="table table-striped catalog">
           <tbody>
             <tr>
-              <td>Место вылова</td>
+              <td>Происхождение</td>
               <td>{{data.description.place}}</td>
             </tr>
             <tr>
@@ -76,7 +76,7 @@
           <span data-group-id="{{data.group}}" class="card-total-price">0</span> руб
         </div>
         <div class="col-3 p-0">
-          <button class="btn btn-frost btn-cart float-right" data-group-id="{{data.group}}" data-title="{{data.title}}" data-img="img/catalog/{{data.group}}/{{data.images[0]}}">В корзину</button>
+          <button class="btn btn-frost btn-cart float-right" data-group-id="{{data.group}}" data-title="{{data.title}}" data-img="img/catalog/{{img_folder}}/{{data.group}}/{{data.images[0]}}">В корзину</button>
         </div>
       </div>
     </div>

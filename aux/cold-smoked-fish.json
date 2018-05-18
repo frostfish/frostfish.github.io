@@ -1,0 +1,107 @@
+[
+{
+  "title": "Муксун филе холодного копчения",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.2-0.4 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "muksun-file-hk",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 1176, "size": 0.3},
+    {"price": 1005, "size": 5}
+  ]
+},
+{
+  "title": "Муксун филе слабосоленый",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.2-0.4 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "muksun-file-ss",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 1147, "size": 0.3},
+    {"price": 980, "size": 5}
+  ]
+},
+{
+  "title": "Муксун спинка холодного копчения",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.5-0.8 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "muksun-spinka-hk",
+  "images": ["1.jpg", "2.jpg", "3.jpg"],
+  "packings": [
+    {"price": 973, "size": 0.65},
+    {"price": 830, "size": 5}
+  ]
+},
+{
+  "title": "Омуль филе холодного копчения",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.2-0.4 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "omul-file-hk",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 1176, "size": 0.3},
+    {"price": 1005, "size": 5}
+  ]
+},
+{
+  "title": "Омуль филе слабосоленый",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.2-0.4 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "omul-file-ss",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 1147, "size": 0.3},
+    {"price": 980, "size": 5}
+  ]
+},
+{
+  "title": "Омуль спинка холодного копчения",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.5-0.8 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "omul-spinka-hk",
+  "images": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"],
+  "packings": [
+    {"price": 1016, "size": 0.65},
+    {"price": 867, "size": 5}
+  ]
+},
+{
+  "title": "Ряпушка холодного копчения",
+  "description": {
+    "place": "ИП Осипов Н.Н.",
+    "size": "0.1-0.2 кг.",
+    "storage_temperature": "от -2 до 5",
+    "shelf_life": "90 суток"
+  },
+  "group": "ryapushka",
+  "images": ["1.jpg", "2.jpg"],
+  "packings": [
+    {"price": 530, "size": 0.15},
+    {"price": 448, "size": 5}
+  ]
+}
+]
