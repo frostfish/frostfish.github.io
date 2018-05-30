@@ -1,10 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'Arial Narrow', 'PT Sans Narrow', Arial, sans-serif;
   font-stretch: condensed;
 }
@@ -313,7 +310,7 @@ a {
   padding: 0 5px 0 5px;
   color: #cccccc;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
@@ -328,7 +325,7 @@ a {
 }
 
 .card-order {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 5px;
   padding: 0;
 }
