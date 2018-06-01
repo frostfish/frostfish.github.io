@@ -10,8 +10,12 @@
     cursor: pointer;
     padding: 1.2rem;
     background-color: #e6eff4;
-    border-radius: 10rem;
+    border-radius: 100%;
     z-index: 100;
+}
+
+.incart {
+    font-size: 0.9rem;
 }
 
 .jqcart-cart-label:hover {
