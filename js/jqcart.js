@@ -14,7 +14,6 @@
     totalCnt = 0,
     visibleLabel = false,
     label = $('.jqcart-cart-label'),
-    modal = '<div class="jqcart-layout"><div class="jqcart-checkout"></div></div>',
     orderform = '<h2 id="user_info">Контактная информация:</h2>\
     <form class="jqcart-orderform">\
       <p>\
@@ -195,7 +194,6 @@
 					subtotal = Math.ceil((subtotal + sum) * 100) / 100;
 
           orderPreview += '<div class="jqcart-tr" data-id="' + cartData[key].id + '">';
-					// orderPreview += '<div class="jqcart-small-td">' + cartData[key].id + '</div>';
 					orderPreview += '<div class="jqcart-small-td jqcart-item-img"><img src="' + cartData[key].img + '" alt=""></div>';
           orderPreview += '<div>' + cartData[key].title + '</div>';
           orderPreview += '<div class="jqcart-price">' + cartData[key].price.toLocaleString('ru') + ' ' + opts.currency + '</div>';
@@ -209,7 +207,7 @@
       orderPreview += '<div class="jqcart-subtotal">Итого: <strong>' + subtotal.toLocaleString('ru') + '</strong> ' + opts.currency + '</div>';
 
 			cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста</h2>';
-      $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
+      $('.jqcart-container').html(cartHtml);
     },
     hideCart: function() {
       $('.jqcart-layout').fadeOut('fast', function() {
@@ -328,10 +326,6 @@ $(function() {
       visibleLabel: true,
       openByAdding: false,
       currency: 'руб.'
-  });
-  // Пример с дополнительными методами
-  $('#open').click(function(){
-    $.jqCart('openCart'); // открыть корзину
   });
   $('#clear').click(function(){
     $.jqCart('clearCart'); // очистить корзину

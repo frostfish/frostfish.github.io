@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 </head>
 
-<body class="index-bg h-100">
+<body onload="$.jqCart('openCart');">
   <!-- Header -->
   <div class="container-fluid text-center white-bg">
     <div class="row vertical-align">
@@ -44,7 +44,7 @@
       </div>
       <a href="cart.html">
         <div class="col-md-2 col-1 align-self-center">
-          <div class="jqcart-cart-label jqcart-cart-fixed">
+          <div class="jqcart-cart-label jqcart-cart-fixed active">
             <span class="open">
               <img src="img/shopping-cart.png">
             </span>
@@ -89,7 +89,7 @@
     <div class="container justify-content-center">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Главная</a>
+          <a class="nav-link" href="index.html">Главная</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="catalog-fresh-frozen-fish.html">Каталог</a>
@@ -113,36 +113,16 @@
     </div>
   </nav>
 
-  <div class="container black-bg mt-5 rounded">
-    <div class="row p-5">
-      <div class="col-lg-12 col-md-12">
-        <p>Группа компаний «FROST FISH» — прямой поставщик рыбы с Севера и Дальнего Востока России. Динамично развивающаяся
-          компания собрана из профессионалов своего дела, рыбного бизнеса и морепродуктов, которые любят свою работу и ценят
-          время своих клиентов, осуществляя быстрые поставки и предоставляя им только качественную и свежую продукцию.</p>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <h3>
-          <i class="fa fa-thumbs-up" aria-hidden="true"></i> Качественные продукты</h3>
-        <p>Благодаря прямым поставкам, мы обеспечиваем своих клиентов только свежими и полезными морепродуктами, соблюдая все
-          нормы транспортировки и хранения</p>
-        <h3>
-          <i class="fa fa-truck" aria-hidden="true"></i> Бесплатная доставка</h3>
-        <p>При заказе от 5000 рублей по Москве доставка бесплатная</p>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <h3>
-          <i class="fa fa-rub" aria-hidden="true"></i> Выгодные цены</h3>
-        <p>Главным достоинством нашей продукции является разумное сочетание высокого качества и доступной цены</p>
-        <h3>
-          <i class="fa fa-percent" aria-hidden="true"></i> Система скидок</h3>
-        <p>У нас работает гибкая система скидок и бонусов, подробности узнавайте у менеджеров</p>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="jqcart-container"></div>
       </div>
     </div>
   </div>
-  </div>
 
   <!-- Footer -->
-  <footer class="p-2 footer-frost bottom-footer">
+  <footer class="p-2 footer-frost">
     <div class="container">
       <p class="m-0 text-center">Группа компаний «FROST FISH»</p>
     </div>

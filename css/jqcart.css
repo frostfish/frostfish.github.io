@@ -14,6 +14,10 @@
     z-index: 100;
 }
 
+.jqcart-cart-label.active {
+    background-color: #ccc;
+}
+
 .incart {
     font-size: 0.9rem;
 }

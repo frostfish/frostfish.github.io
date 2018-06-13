@@ -42,17 +42,19 @@
             <a href="mailto:info@frost-fish.ru">info@frost-fish.ru</a>
           </span>
         </div>
-        <div class="col-md-2 col-1 align-self-center">
-          <div class="jqcart-cart-label jqcart-cart-fixed">
-            <span class="open">
-              <img src="img/shopping-cart.png">
-            </span>
-            <br/>
-            <span class="incart">В корзине:
-              <span class="jqcart-total-cnt">0</span>
-            </span>
+        <a href="cart.html">
+          <div class="col-md-2 col-1 align-self-center">
+            <div class="jqcart-cart-label jqcart-cart-fixed">
+              <span class="open">
+                <img src="img/shopping-cart.png">
+              </span>
+              <br/>
+              <span class="incart">В корзине:
+                <span class="jqcart-total-cnt">0</span>
+              </span>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="modal fade" id="backCallModal" tabindex="-1" role="dialog" aria-labelledby="backCallModalLabel" aria-hidden="true">
@@ -84,8 +86,8 @@
     </div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand navbar-frost text-center mb-3">
-      <div class="container">
-        <ul class="navbar-nav mr-auto">
+      <div class="container justify-content-center">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Главная</a>
           </li>
@@ -115,7 +117,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-12 pl-4">
           <h2>Отдел продаж</h2>
-          <div class="mt-2 mb-4">
+          <div class="mt-2 mb-4 clearfix">
             <a href="img/contacts/kodorkin.jpg" data-toggle="lightbox">
               <img class="contacts-photo" src="img/contacts/kodorkin.jpg" alt="">
             </a>
@@ -124,7 +126,7 @@
             <a href="mailto:prodam@frost-fish.ru">prodam@frost-fish.ru</a>
             <br/> Телефон: 8 (968) 761-61-32
           </div>
-          <div class="mt-2 mb-4">
+          <div class="mt-2 mb-4 clearfix">
             <a href="img/contacts/shmatov.jpg" data-toggle="lightbox">
               <img class="contacts-photo" src="img/contacts/shmatov.jpg" alt="">
             </a>
@@ -134,7 +136,7 @@
             <br/> Телефон: 8 (919) 722-90-55
           </div>
           <h2>Отдел закупок</h2>
-          <div class="mt-2 mb-2">
+          <div class="mt-2 mb-2 clearfix">
             <a href="img/contacts/kobin.jpg" data-toggle="lightbox">
               <img class="contacts-photo" src="img/contacts/kobin.jpg" alt="">
             </a>
@@ -145,7 +147,7 @@
           </div>
           <div class="bd-callout bd-callout-info">
             <h3>Форма заявки</h3>
-            <form class="pl-2 pr-2" method="post" action="http://api.frost-fish.ru:5000/post-request"  class="request">
+            <form class="pl-2 pr-2" method="post" action="http://api.frost-fish.ru:5000/post-request" class="request">
               <div class="form-group row">
                 <div class="col-12">
                   <input type="text" class="form-control" name="client_phone" placeholder="Номер телефона в любом формате">
@@ -205,7 +207,14 @@
         $(this).ekkoLightbox({ alwaysShowClose: true });
       });
     </script>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48089411 = new Ya.Metrika2({ id:48089411, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48089411" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function () { try { w.yaCounter48089411 = new Ya.Metrika2({ id: 48089411, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); } catch (e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/48089411" style="position:absolute; left:-9999px;" alt="" />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
   </body>
 
