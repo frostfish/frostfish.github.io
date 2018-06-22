@@ -67,7 +67,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" action="http://api.frost-fish.ru:5000/post-request" class="callback">
+          <form method="post" action="http://api.frost-fish.ru:5000/post-request" id="backcallform">
             <div class="form-group row">
               <label for="client_phone" class="col-lg-3 col-md-3 col-form-label text-right">Телефон</label>
               <div class="col-lg-9 col-md-9">
@@ -116,6 +116,9 @@
   <div class="container mb-4">
     <div class="row">
       <div class="col-12 text-center">
+        <div id="cartstatus" style="display: none">
+          <div class="alert alert-success" role="alert">Заказ успешно оформлен, подтверждение отправлено вам на почту</div>
+        </div>
         <div class="jqcart-container"></div>
       </div>
     </div>
