@@ -29,7 +29,7 @@
         <input type="text" name="user_comment" placeholder="Напишите здесь любой комментарий (не обязательно)">\
       </p>\
       <p>\
-        <button id="submit" class="btn btn-success">Отправить заказ</button>\
+        <button id="submit" class="btn btn-success" onclick="yaCounter48089411.reachGoal(\'ZAKAZ_IZ_KORZINY\'); return true;">Отправить заказ</button>\
         <button id="clear" class="btn btn-warning">Очистить корзину</button>\
         <button id="reset" class="btn">Вернуться к покупкам</button>\
       </p>\
